@@ -1,11 +1,10 @@
+import { UserEntity } from '@api/user/user.entity';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ApiModule } from './api/api.module';
+import { ApiModule } from '@api/api.module';
 import { db } from './dbconfig';
 
-const apiEntities = [
-  
-];
+const apiEntities = [UserEntity];
 
 @Module({
   imports: [
