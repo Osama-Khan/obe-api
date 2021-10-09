@@ -3,8 +3,10 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ApiModule } from '@api/api.module';
 import { db } from './dbconfig';
+import { ProgramEntity } from '@api/program/program.entity';
+import { CourseEntity } from '@api/course/course.entity';
 
-const apiEntities = [UserEntity];
+const apiEntities = [CourseEntity, ProgramEntity, UserEntity];
 
 @Module({
   imports: [
