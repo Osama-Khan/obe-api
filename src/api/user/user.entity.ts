@@ -14,4 +14,7 @@ export class UserEntity extends ParentEntity {
 
   @Column({ name: 'date_of_birth' })
   dateOfBirth: Date;
+
+  @Column({ type: 'boolean', default: false })
+  isAdmin: boolean;
 }
