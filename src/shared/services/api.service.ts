@@ -6,7 +6,7 @@ import { DeepPartial, Repository } from 'typeorm';
  */
 export abstract class ApiService<Entity> {
   /** @param repository Repository used for database operations.*/
-  constructor(private repository: Repository<Entity>) {}
+  constructor(protected repository: Repository<Entity>) {}
 
   /**
    * Finds entities that match the given criteria
