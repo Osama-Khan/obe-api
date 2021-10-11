@@ -1,5 +1,6 @@
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
-import { Column, Entity } from 'typeorm';
+import { BeforeInsert, Column, Entity } from 'typeorm';
+import * as bcrypt from 'bcrypt';
 
 @Entity()
 export class UserEntity extends ParentEntity {
@@ -17,4 +18,11 @@ export class UserEntity extends ParentEntity {
 
   @Column({ type: 'boolean', default: false })
   isAdmin: boolean;
+
+  @BeforeInsert()
+  async encryptPassword() {
+    if (this.password) {
+      this.password = await bcrypt.hash(this.password, 5);
+    }
+  }
 }
