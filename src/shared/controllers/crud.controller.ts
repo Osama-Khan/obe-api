@@ -5,8 +5,11 @@ import { DeepPartial } from 'typeorm';
 /**
  * Controller containing general CRUD endpoints
  */
-export abstract class CrudController<Entity, Service extends ApiService<Entity>> {
-  /** 
+export abstract class CrudController<
+  Entity,
+  Service extends ApiService<Entity>
+> {
+  /**
    * @param service The ApiService of the given entity
    */
   constructor(private service: Service) {}
