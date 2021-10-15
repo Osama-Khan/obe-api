@@ -8,4 +8,7 @@ type RoleType = 'admin' | 'teacher' | 'student';
 export class RoleEntity extends ParentEntity {
   @Column()
   name: RoleType;
+
+  @OneToMany((type) => UserEntity, (user) => user.role)
+  users: UserEntity[];
 }

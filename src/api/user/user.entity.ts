@@ -1,6 +1,7 @@
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
-import { BeforeInsert, Column, Entity } from 'typeorm';
+import { BeforeInsert, Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+import { RoleEntity } from '@api/role/role.entity';
 
 @Entity({ name: 'user' })
 export class UserEntity extends ParentEntity {
@@ -16,8 +17,9 @@ export class UserEntity extends ParentEntity {
   @Column({ name: 'date_of_birth' })
   dateOfBirth: Date;
 
-  @Column({ type: 'boolean', default: false })
-  isAdmin: boolean;
+  @ManyToOne((type) => RoleEntity, (role) => role.users)
+  @JoinColumn({ name: 'role_id' })
+  role: RoleEntity;
 
   @BeforeInsert()
   async encryptPassword() {

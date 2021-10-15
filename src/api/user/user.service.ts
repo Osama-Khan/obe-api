@@ -15,11 +15,14 @@ export class UserService extends ApiService<UserEntity> {
   }
 
   async login(data: Pick<UserEntity, 'username' | 'password'>) {
-    const u = await this.repository.findOne({ username: data.username });
+    const u = await this.repository.findOne(
+      { username: data.username },
+      { relations: ['role'] },
+    );
     if (!u) throw new BadRequestException('No such user!');
     if (await bcrypt.compare(data.password, u.password)) {
       const { password, ...user } = u;
-      const token = JwtHelper.sign({ id: u.id, isAdmin: u.isAdmin });
+      const token = JwtHelper.sign({ id: u.id, role: u.role });
       return { ...user, token };
     }
     throw new BadRequestException('Invalid password!');
