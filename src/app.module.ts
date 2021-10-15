@@ -7,12 +7,14 @@ import { ProgramEntity } from '@api/program/program.entity';
 import { CourseEntity } from '@api/course/course.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { PLOEntity } from '@api/objective/plo/plo.entity';
+import { RoleEntity } from '@api/role/role.entity';
 
 const apiEntities = [
   CLOEntity,
   CourseEntity,
   PLOEntity,
   ProgramEntity,
+  RoleEntity,
   UserEntity,
 ];
 
