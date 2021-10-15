@@ -2,7 +2,7 @@ import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { BeforeInsert, Column, Entity } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 
-@Entity()
+@Entity({ name: 'user' })
 export class UserEntity extends ParentEntity {
   @Column()
   username: string;
