@@ -5,8 +5,16 @@ import { ApiModule } from '@api/api.module';
 import { db } from './dbconfig';
 import { ProgramEntity } from '@api/program/program.entity';
 import { CourseEntity } from '@api/course/course.entity';
+import { CLOEntity } from '@api/objective/clo/clo.entity';
+import { PLOEntity } from '@api/objective/plo/plo.entity';
 
-const apiEntities = [CourseEntity, ProgramEntity, UserEntity];
+const apiEntities = [
+  CLOEntity,
+  CourseEntity,
+  PLOEntity,
+  ProgramEntity,
+  UserEntity,
+];
 
 @Module({
   imports: [
