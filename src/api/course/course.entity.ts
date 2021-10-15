@@ -1,3 +1,4 @@
+import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, ManyToMany } from 'typeorm';
@@ -12,4 +13,7 @@ export class CourseEntity extends ParentEntity {
 
   @ManyToMany((type) => ProgramEntity)
   programs: ProgramEntity[];
+
+  @OneToMany((type) => CLOEntity, (clo) => clo.course)
+  clos: CLOEntity[];
 }
