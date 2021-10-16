@@ -11,6 +11,9 @@ export class CourseEntity extends ParentEntity {
   @Column({ unique: true })
   code: string;
 
+  @Column({ name: 'credit_hours', type: 'tinyint' })
+  creditHours: number;
+
   @ManyToMany((type) => ProgramEntity, (program) => program.courses)
   programs: ProgramEntity[];
 
