@@ -13,7 +13,7 @@ export class CLOEntity extends ParentEntity {
   description: string;
 
   @ManyToMany((type) => PLOEntity, (plo) => plo.clos)
-  plos: PLOEntity;
+  plos: PLOEntity[];
 
   @ManyToOne((type) => CourseEntity, (course) => course.clos)
   @JoinColumn({ name: 'course_id' })
