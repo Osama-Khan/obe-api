@@ -44,9 +44,9 @@ export abstract class ApiService<Entity> {
    */
   async insert(entity: DeepPartial<Entity>): Promise<Entity> {
     const e = this.repository.create(entity);
+
     try {
-      const out = await this.repository.insert(e);
-      return await this.findOne(out.generatedMaps[0].id);
+      return await this.repository.save(e);
     } catch (e) {
       if (e.message.startsWith('Duplicate entry')) {
         throw new BadRequestException('A similar entity already exists');
