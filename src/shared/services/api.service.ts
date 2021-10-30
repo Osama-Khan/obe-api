@@ -1,5 +1,11 @@
 import { BadRequestException, NotFoundException } from '@nestjs/common';
-import { DeepPartial, Repository } from 'typeorm';
+import {
+  DeepPartial,
+  FindManyOptions,
+  FindOneOptions,
+  ObjectID,
+  Repository,
+} from 'typeorm';
 
 /**
  * Service containing the general operations of an API service
@@ -10,19 +16,24 @@ export abstract class ApiService<Entity> {
 
   /**
    * Finds entities that match the given criteria
+   * @param criteria Criteria to filter entities
    * @returns A promise that resolves to an array of entities
    */
-  async find(): Promise<Entity[]> {
-    return this.repository.find();
+  async find(criteria?: FindManyOptions<Entity>): Promise<Entity[]> {
+    return this.repository.find(criteria);
   }
 
   /**
    * Gets an entity with given id
    * @param id The id of entity to find
+   * @param criteria The criteria to filter entities
    * @returns A promise that resolves to the `Entity` with given id
    */
-  async findOne(id: string): Promise<Entity> {
-    return this.repository.findOne(id);
+  async findOne(
+    id: string | Number | Date | ObjectID,
+    criteria?: FindOneOptions<Entity>,
+  ): Promise<Entity> {
+    return this.repository.findOne(id, criteria);
   }
 
   /**

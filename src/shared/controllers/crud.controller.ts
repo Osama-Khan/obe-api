@@ -1,6 +1,6 @@
-import { Body, Get, Param, Patch, Put, Delete } from '@nestjs/common';
+import { Body, Param, Patch, Put, Delete, Post } from '@nestjs/common';
 import { ApiService } from '@shared/services/api.service';
-import { DeepPartial } from 'typeorm';
+import { DeepPartial, FindManyOptions, FindOneOptions } from 'typeorm';
 
 /**
  * Controller containing general CRUD endpoints
@@ -15,15 +15,15 @@ export abstract class CrudController<
   constructor(private service: Service) {}
 
   /** Gets a list of entities */
-  @Get()
-  get() {
-    return this.service.find();
+  @Post()
+  get(@Body() criteria?: FindManyOptions<Entity>) {
+    return this.service.find(criteria);
   }
 
   /** Gets one entity matching the given id */
-  @Get(':id')
-  getOne(@Param('id') id: string) {
-    return this.service.findOne(id);
+  @Post(':id')
+  getOne(@Param('id') id: string, @Body() criteria?: FindOneOptions<Entity>) {
+    return this.service.findOne(id, criteria);
   }
 
   /** Inserts an entity */
