@@ -7,12 +7,12 @@ import { DeepPartial, FindManyOptions, FindOneOptions } from 'typeorm';
  */
 export abstract class CrudController<
   Entity,
-  Service extends ApiService<Entity>
+  Service extends ApiService<Entity>,
 > {
   /**
    * @param service The ApiService of the given entity
    */
-  constructor(private service: Service) {}
+  constructor(protected service: Service) {}
 
   /** Gets a list of entities */
   @Post()
