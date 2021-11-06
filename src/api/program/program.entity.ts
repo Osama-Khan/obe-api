@@ -20,7 +20,7 @@ export class ProgramEntity extends ParentEntity {
   @OneToMany((type) => PLOEntity, (plo) => plo.program)
   plos: PLOEntity[];
 
-  @ManyToMany((type) => SectionEntity, (section) => section.programs)
+  @OneToMany((type) => SectionEntity, (section) => section.program)
   @JoinTable({
     name: 'section_program',
     joinColumn: { name: 'program_id' },

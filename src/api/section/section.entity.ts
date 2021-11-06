@@ -2,7 +2,15 @@ import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { ProgramEntity } from '@api/program/program.entity';
 import { UserEntity } from '@api/user/user.entity';
 import { ParentEntity } from '@shared/entity/ParentEntity';
-import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
+import {
+  Column,
+  Entity,
+  JoinColumn,
+  JoinTable,
+  ManyToMany,
+  ManyToOne,
+  OneToMany,
+} from 'typeorm';
 
 @Entity({ name: 'section' })
 export class SectionEntity extends ParentEntity {
@@ -12,13 +20,9 @@ export class SectionEntity extends ParentEntity {
   @Column()
   semester: number;
 
-  @ManyToMany((type) => ProgramEntity, (program) => program.sections)
-  @JoinTable({
-    name: 'section_program',
-    joinColumn: { name: 'section_id' },
-    inverseJoinColumn: { name: 'program_id' },
-  })
-  programs: ProgramEntity[];
+  @ManyToOne((type) => ProgramEntity, (program) => program.sections)
+  @JoinColumn({ name: 'program_id' })
+  program: ProgramEntity;
 
   @ManyToMany((type) => UserEntity, (user) => user.sections)
   @JoinTable({

@@ -61,14 +61,11 @@ export class AllocationService extends ApiService<AllocationEntity> {
         throw new ExcelDataNotFoundException('Subject code', subjectCode, n);
 
       // Section validation
-      const sections = await this.sectionRepository.find({
-        where: { name, semester },
-        relations: ['programs'],
+      const section = await this.sectionRepository.findOne({
+        where: { name, semester, program: { title: program } },
+        relations: ['program'],
       });
-      if (
-        sections.length === 0 ||
-        !sections.some((s) => s.programs.some((p) => p.title === program))
-      ) {
+      if (!section) {
         throw new ExcelDataNotFoundException('Section', sectionString, n);
       }
 
@@ -83,7 +80,6 @@ export class AllocationService extends ApiService<AllocationEntity> {
       }
 
       const course = subject;
-      const section = sections[0];
       const user = teacher;
 
       data.push(this.repository.create({ user, course, section }));
