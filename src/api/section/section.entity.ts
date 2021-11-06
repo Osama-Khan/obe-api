@@ -10,4 +10,20 @@ export class SectionEntity extends ParentEntity {
 
   @Column({ unique: true })
   semester: number;
+
+  @ManyToMany((type) => ProgramEntity, (program) => program.sections)
+  @JoinTable({
+    name: 'section_program',
+    joinColumn: { name: 'section_id' },
+    inverseJoinColumn: { name: 'program_id' },
+  })
+  programs: ProgramEntity[];
+
+  @ManyToMany((type) => UserEntity, (user) => user.sections)
+  @JoinTable({
+    name: 'user_section',
+    joinColumn: { name: 'section_id' },
+    inverseJoinColumn: { name: 'user_id' },
+  })
+  users: UserEntity[];
 }

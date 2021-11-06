@@ -1,5 +1,6 @@
 import { CourseEntity } from '@api/course/course.entity';
 import { PLOEntity } from '@api/objective/plo/plo.entity';
+import { SectionEntity } from '@api/section/section.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
 
@@ -18,4 +19,12 @@ export class ProgramEntity extends ParentEntity {
 
   @OneToMany((type) => PLOEntity, (plo) => plo.program)
   plos: PLOEntity[];
+
+  @ManyToMany((type) => SectionEntity, (section) => section.programs)
+  @JoinTable({
+    name: 'section_program',
+    joinColumn: { name: 'program_id' },
+    inverseJoinColumn: { name: 'section_id' },
+  })
+  sections: SectionEntity[];
 }
