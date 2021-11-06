@@ -1,5 +1,5 @@
 import { CrudController } from '@shared/controllers/crud.controller';
-import { Controller, Inject } from '@nestjs/common';
+import { Body, Controller, Inject, Post } from '@nestjs/common';
 import { AllocationEntity } from './allocation.entity';
 import { AllocationService } from './allocation.service';
 
@@ -10,5 +10,10 @@ export class AllocationController extends CrudController<
 > {
   constructor(@Inject(AllocationService) service: AllocationService) {
     super(service);
+  }
+
+  @Post('upload')
+  uploadAllocationFile(@Body() { file }) {
+    return this.service.applyAllocationFile(file);
   }
 }
