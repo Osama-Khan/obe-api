@@ -7,6 +7,7 @@ import { CourseModule } from './course/course.module';
 import { ProgramModule } from './program/program.module';
 import { ObjectiveModule } from './objective/objective.module';
 import { RoleModule } from './role/role.module';
+import { SectionModule } from './section/section.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { RoleModule } from './role/role.module';
     ObjectiveModule,
     ProgramModule,
     RoleModule,
+    SectionModule,
     UserModule,
   ],
   controllers: [ApiController],
