@@ -8,12 +8,14 @@ import { ProgramModule } from './program/program.module';
 import { ObjectiveModule } from './objective/objective.module';
 import { RoleModule } from './role/role.module';
 import { SectionModule } from './section/section.module';
+import { AllocationModule } from './allocation/allocation.module';
 
 @Module({
   imports: [
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'),
     }),
+    AllocationModule,
     CourseModule,
     ObjectiveModule,
     ProgramModule,

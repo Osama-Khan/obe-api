@@ -9,8 +9,10 @@ import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { PLOEntity } from '@api/objective/plo/plo.entity';
 import { RoleEntity } from '@api/role/role.entity';
 import { SectionEntity } from '@api/section/section.entity';
+import { AllocationEntity } from '@api/allocation/allocation.entity';
 
 const apiEntities = [
+  AllocationEntity,
   CLOEntity,
   CourseEntity,
   PLOEntity,
