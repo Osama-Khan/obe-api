@@ -1,3 +1,4 @@
+import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
@@ -24,4 +25,7 @@ export class CourseEntity extends ParentEntity {
 
   @OneToMany((type) => CLOEntity, (clo) => clo.course)
   clos: CLOEntity[];
+
+  @OneToMany((type) => AllocationEntity, (allocation) => allocation.course)
+  allocations: AllocationEntity[];
 }

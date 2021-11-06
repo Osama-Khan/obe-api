@@ -7,10 +7,12 @@ import {
   JoinTable,
   ManyToMany,
   ManyToOne,
+  OneToMany,
 } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import { RoleEntity } from '@api/role/role.entity';
 import { SectionEntity } from '@api/section/section.entity';
+import { AllocationEntity } from '@api/allocation/allocation.entity';
 
 @Entity({ name: 'user' })
 export class UserEntity extends ParentEntity {
@@ -37,6 +39,9 @@ export class UserEntity extends ParentEntity {
     inverseJoinColumn: { name: 'section_id' },
   })
   sections: SectionEntity[];
+
+  @OneToMany((type) => AllocationEntity, (allocation) => allocation.user)
+  allocations: AllocationEntity[];
 
   @BeforeInsert()
   async encryptPassword() {

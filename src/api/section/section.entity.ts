@@ -1,7 +1,8 @@
+import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { ProgramEntity } from '@api/program/program.entity';
 import { UserEntity } from '@api/user/user.entity';
 import { ParentEntity } from '@shared/entity/ParentEntity';
-import { Column, Entity, JoinTable, ManyToMany } from 'typeorm';
+import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
 
 @Entity({ name: 'section' })
 export class SectionEntity extends ParentEntity {
@@ -26,4 +27,7 @@ export class SectionEntity extends ParentEntity {
     inverseJoinColumn: { name: 'user_id' },
   })
   users: UserEntity[];
+
+  @OneToMany((type) => AllocationEntity, (allocation) => allocation.section)
+  allocations: AllocationEntity[];
 }
