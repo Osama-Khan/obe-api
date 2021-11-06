@@ -1,4 +1,5 @@
 import { Body, Param, Patch, Put, Delete, Post } from '@nestjs/common';
+import CriteriaValidationPipe from '@shared/pipes/criteria-validation.pipe';
 import { ApiService } from '@shared/services/api.service';
 import { DeepPartial, FindManyOptions, FindOneOptions } from 'typeorm';
 
@@ -16,13 +17,16 @@ export abstract class CrudController<
 
   /** Gets a list of entities */
   @Post()
-  get(@Body() criteria?: FindManyOptions<Entity>) {
+  get(@Body(new CriteriaValidationPipe()) criteria?: FindManyOptions<Entity>) {
     return this.service.find(criteria);
   }
 
   /** Gets one entity matching the given id */
   @Post(':id')
-  getOne(@Param('id') id: string, @Body() criteria?: FindOneOptions<Entity>) {
+  getOne(
+    @Param('id') id: string,
+    @Body(new CriteriaValidationPipe()) criteria?: FindOneOptions<Entity>,
+  ) {
     return this.service.findOne(id, criteria);
   }
 
