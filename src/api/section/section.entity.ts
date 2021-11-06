@@ -5,10 +5,10 @@ import { Column, Entity, JoinTable, ManyToMany } from 'typeorm';
 
 @Entity({ name: 'section' })
 export class SectionEntity extends ParentEntity {
-  @Column({ unique: true })
+  @Column()
   name: string;
 
-  @Column({ unique: true })
+  @Column()
   semester: number;
 
   @ManyToMany((type) => ProgramEntity, (program) => program.sections)
