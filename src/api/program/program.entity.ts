@@ -17,7 +17,12 @@ export class ProgramEntity extends ParentEntity {
   })
   courses: CourseEntity[];
 
-  @OneToMany((type) => PLOEntity, (plo) => plo.program)
+  @ManyToMany((type) => PLOEntity, (plo) => plo.programs)
+  @JoinTable({
+    name: 'program_plo',
+    joinColumn: { name: 'program_id' },
+    inverseJoinColumn: { name: 'plo_id' },
+  })
   plos: PLOEntity[];
 
   @OneToMany((type) => SectionEntity, (section) => section.program)

@@ -26,7 +26,11 @@ export class PLOEntity extends ParentEntity {
   })
   clos: CLOEntity[];
 
-  @ManyToOne((type) => ProgramEntity, (program) => program.plos)
-  @JoinColumn({ name: 'program_id' })
-  program: ProgramEntity;
+  @ManyToMany((type) => ProgramEntity, (program) => program.plos)
+  @JoinTable({
+    name: 'program_plo',
+    joinColumn: { name: 'plo_id' },
+    inverseJoinColumn: { name: 'program_id' },
+  })
+  programs: ProgramEntity[];
 }
