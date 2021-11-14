@@ -7,4 +7,12 @@ import { PLOEntity } from '../plo/plo.entity';
 export class ObjectiveMapEntity extends ParentEntity {
   @Column()
   weight: number;
+
+  @ManyToOne((type) => PLOEntity, (plo) => plo.maps)
+  @JoinColumn({ name: 'plo_id' })
+  plo: PLOEntity;
+
+  @ManyToOne((type) => CLOEntity, (clo) => clo.maps)
+  @JoinColumn({ name: 'clo_id' })
+  clo: CLOEntity;
 }

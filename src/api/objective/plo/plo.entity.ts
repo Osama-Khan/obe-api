@@ -1,14 +1,7 @@
 import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
-import {
-  Column,
-  Entity,
-  JoinColumn,
-  JoinTable,
-  ManyToMany,
-  ManyToOne,
-} from 'typeorm';
-import { CLOEntity } from '../clo/clo.entity';
+import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
+import { ObjectiveMapEntity } from '../map/map.entity';
 
 @Entity({ name: 'plo' })
 export class PLOEntity extends ParentEntity {
@@ -18,13 +11,8 @@ export class PLOEntity extends ParentEntity {
   @Column()
   description: string;
 
-  @ManyToMany((type) => CLOEntity, (clo) => clo.plos)
-  @JoinTable({
-    name: 'plo_clo',
-    joinColumn: { name: 'plo_id' },
-    inverseJoinColumn: { name: 'clo_id' },
-  })
-  clos: CLOEntity[];
+  @OneToMany((type) => ObjectiveMapEntity, (obj) => obj.plo)
+  maps: ObjectiveMapEntity[];
 
   @ManyToMany((type) => ProgramEntity, (program) => program.plos)
   @JoinTable({

@@ -1,8 +1,7 @@
 import { CourseEntity } from '@api/course/course.entity';
-import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
-import { Column, Entity, JoinColumn, ManyToMany, ManyToOne } from 'typeorm';
-import { PLOEntity } from '../plo/plo.entity';
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
+import { ObjectiveMapEntity } from '../map/map.entity';
 
 @Entity({ name: 'clo' })
 export class CLOEntity extends ParentEntity {
@@ -12,8 +11,10 @@ export class CLOEntity extends ParentEntity {
   @Column()
   description: string;
 
-  @ManyToMany((type) => PLOEntity, (plo) => plo.clos)
-  plos: PLOEntity[];
+  @OneToMany((type) => ObjectiveMapEntity, (obj) => obj.clo, {
+    cascade: true,
+  })
+  maps: ObjectiveMapEntity[];
 
   @ManyToOne((type) => CourseEntity, (course) => course.clos)
   @JoinColumn({ name: 'course_id' })
