@@ -10,11 +10,13 @@ import { PLOEntity } from '@api/objective/plo/plo.entity';
 import { RoleEntity } from '@api/role/role.entity';
 import { SectionEntity } from '@api/section/section.entity';
 import { AllocationEntity } from '@api/allocation/allocation.entity';
+import { ObjectiveMapEntity } from '@api/objective/map/map.entity';
 
 const apiEntities = [
   AllocationEntity,
   CLOEntity,
   CourseEntity,
+  ObjectiveMapEntity,
   PLOEntity,
   ProgramEntity,
   RoleEntity,
