@@ -9,6 +9,7 @@ import { ObjectiveModule } from './objective/objective.module';
 import { RoleModule } from './role/role.module';
 import { SectionModule } from './section/section.module';
 import { AllocationModule } from './allocation/allocation.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { AllocationModule } from './allocation/allocation.module';
     RoleModule,
     SectionModule,
     UserModule,
+    AuthModule,
   ],
   controllers: [ApiController],
 })
