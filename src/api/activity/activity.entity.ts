@@ -1,3 +1,4 @@
+import { SectionEntity } from '@api/section/section.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import { ActivityTypeEntity } from './type/activity-type.entity';
@@ -13,4 +14,8 @@ export class ActivityEntity extends ParentEntity {
   @ManyToOne((type) => ActivityTypeEntity, (at) => at.activities)
   @JoinColumn({ name: 'type_id' })
   type: ActivityTypeEntity;
+
+  @ManyToOne((type) => SectionEntity, (sec) => sec.activities)
+  @JoinColumn({ name: 'section_id' })
+  section: SectionEntity;
 }

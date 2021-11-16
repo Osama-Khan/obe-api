@@ -1,3 +1,4 @@
+import { ActivityEntity } from '@api/activity/activity.entity';
 import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { ProgramEntity } from '@api/program/program.entity';
 import { UserEntity } from '@api/user/user.entity';
@@ -34,4 +35,7 @@ export class SectionEntity extends ParentEntity {
 
   @OneToMany((type) => AllocationEntity, (allocation) => allocation.section)
   allocations: AllocationEntity[];
+
+  @OneToMany((type) => ActivityEntity, (activity) => activity.section)
+  activities: ActivityEntity[];
 }
