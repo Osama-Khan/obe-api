@@ -10,6 +10,7 @@ import { RoleModule } from './role/role.module';
 import { SectionModule } from './section/section.module';
 import { AllocationModule } from './allocation/allocation.module';
 import { AuthModule } from './auth/auth.module';
+import { ActivityModule } from './activity/activity.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { AuthModule } from './auth/auth.module';
     SectionModule,
     UserModule,
     AuthModule,
+    ActivityModule,
   ],
   controllers: [ApiController],
 })
