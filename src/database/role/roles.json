@@ -1,0 +1,6 @@
+[
+  { "name": "admin" },
+  { "name": "hod" },
+  { "name": "teacher" },
+  { "name": "student" }
+]
