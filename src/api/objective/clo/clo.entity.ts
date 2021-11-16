@@ -8,7 +8,7 @@ export class CLOEntity extends ParentEntity {
   @Column()
   title: string;
 
-  @Column()
+  @Column({ type: 'text' })
   description: string;
 
   @OneToMany((type) => ObjectiveMapEntity, (obj) => obj.clo, {
