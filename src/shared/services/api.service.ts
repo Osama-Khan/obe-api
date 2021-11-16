@@ -1,9 +1,9 @@
 import { BadRequestException, NotFoundException } from '@nestjs/common';
 import {
   DeepPartial,
+  FindConditions,
   FindManyOptions,
   FindOneOptions,
-  ObjectID,
   Repository,
 } from 'typeorm';
 
@@ -25,15 +25,15 @@ export abstract class ApiService<Entity> {
 
   /**
    * Gets an entity with given id
-   * @param id The id of entity to find
+   * @param conditions Conditions for the entity
    * @param criteria The criteria to filter entities
    * @returns A promise that resolves to the `Entity` with given id
    */
   async findOne(
-    id: string | Number | Date | ObjectID,
+    conditions: FindConditions<Entity>,
     criteria?: FindOneOptions<Entity>,
   ): Promise<Entity> {
-    return this.repository.findOne(id, criteria);
+    return this.repository.findOne(conditions, criteria);
   }
 
   /**
