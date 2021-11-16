@@ -1,4 +1,2 @@
-import { getBearerFromRequest } from './request.helper';
-import JwtHelper from './jwt,helper';
-
-export { getBearerFromRequest, JwtHelper };
+export { getBearerFromRequest } from './request.helper';
+export { default as JwtHelper } from './jwt.helper';

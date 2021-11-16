@@ -1,6 +1,6 @@
 import { UnauthorizedException } from '@nestjs/common';
 import * as jwt from 'jsonwebtoken';
-import { getBearerFromRequest } from './';
+import { getBearerFromRequest } from './request.helper';
 
 export default class JwtHelper {
   static sign(object: any, options: jwt.SignOptions = {}) {
