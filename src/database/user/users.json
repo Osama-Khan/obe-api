@@ -1,34 +1,38 @@
 [
   {
     "username": "admin",
-    "first_name": "Super",
-    "last_name": "Admin",
+    "firstName": "Super",
+    "lastName": "Admin",
     "email": "admin1@obe.com",
     "password": "admin1",
-    "date_of_birth": "1970-01-01 00:00:00"
+    "role": "admin",
+    "dateOfBirth": "1970-01-01 00:00:00"
   },
   {
     "username": "hod",
-    "first_name": "Department",
-    "last_name": "Head",
+    "firstName": "Department",
+    "lastName": "Head",
     "email": "hod1@obe.com",
     "password": "hod1",
-    "date_of_birth": "1970-01-01 00:00:00"
+    "role": "hod",
+    "dateOfBirth": "1970-01-01 00:00:00"
   },
   {
     "username": "teacher",
-    "first_name": "Teacher",
-    "last_name": "User",
+    "firstName": "Teacher",
+    "lastName": "User",
     "email": "teacher1@obe.com",
     "password": "teacher1",
-    "date_of_birth": "1970-01-01 00:00:00"
+    "role": "teacher",
+    "dateOfBirth": "1970-01-01 00:00:00"
   },
   {
     "username": "student",
-    "first_name": "Student",
-    "last_name": "Test",
+    "firstName": "Student",
+    "lastName": "Test",
     "email": "student1@obe.com",
     "password": "student1",
-    "date_of_birth": "1970-01-01 00:00:00"
+    "role": "student",
+    "dateOfBirth": "1970-01-01 00:00:00"
   }
 ]
