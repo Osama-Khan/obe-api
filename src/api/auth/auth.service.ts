@@ -12,6 +12,7 @@ export class AuthService {
     @InjectRepository(UserEntity) private repository: Repository<UserEntity>,
   ) {}
 
+  /** Logs the user in using username and password */
   async login(data: Pick<UserEntity, 'username' | 'password'>) {
     const u = await this.repository.findOne(
       { username: data.username },
@@ -26,6 +27,7 @@ export class AuthService {
     throw new BadRequestException('Invalid password!');
   }
 
+  /** Logs the user in using a valid JWT token */
   async loginWithToken(token: string) {
     let user: { id: string; role: RoleEntity };
     try {

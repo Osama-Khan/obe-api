@@ -12,6 +12,7 @@ export class AllocationController extends CrudController<
     super(service);
   }
 
+  /** Endpoint that allocates allocation data through an excel file */
   @Post('upload')
   uploadAllocationFile(@Body() { file }) {
     return this.service.applyAllocationFile(file);

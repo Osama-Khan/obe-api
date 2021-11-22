@@ -16,22 +16,28 @@ import { AllocationEntity } from '@api/allocation/allocation.entity';
 
 @Entity({ name: 'user' })
 export class UserEntity extends ParentEntity {
+  /** Username of the user */
   @Column()
   username: string;
 
+  /** Email of the user */
   @Column()
   email: string;
 
+  /** Password of the user */
   @Column()
   password: string;
 
+  /** Date of birth of the user */
   @Column({ name: 'date_of_birth' })
   dateOfBirth: Date;
 
+  /** Role of the user */
   @ManyToOne((type) => RoleEntity, (role) => role.users)
   @JoinColumn({ name: 'role_id' })
   role: RoleEntity;
 
+  /** Sections the user (student) studies in */
   @ManyToMany((type) => SectionEntity, (section) => section.users)
   @JoinTable({
     name: 'user_section',
@@ -40,9 +46,11 @@ export class UserEntity extends ParentEntity {
   })
   sections: SectionEntity[];
 
+  /** Allocations of the user (teacher) to different sections */
   @OneToMany((type) => AllocationEntity, (allocation) => allocation.user)
   allocations: AllocationEntity[];
 
+  /** Encryption method for password before insertion */
   @BeforeInsert()
   async encryptPassword() {
     if (this.password) {

@@ -6,15 +6,19 @@ import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
 
 @Entity({ name: 'course' })
 export class CourseEntity extends ParentEntity {
+  /** Title of the course */
   @Column()
   title: string;
 
+  /** Unique code for the course */
   @Column({ unique: true })
   code: string;
 
+  /** Credit hours of the course */
   @Column({ name: 'credit_hours', type: 'tinyint' })
   creditHours: number;
 
+  /** The programs this course is present in */
   @ManyToMany((type) => ProgramEntity, (program) => program.courses)
   @JoinTable({
     name: 'program_course',
@@ -23,9 +27,11 @@ export class CourseEntity extends ParentEntity {
   })
   programs: ProgramEntity[];
 
+  /** The clos that this course fulfills */
   @OneToMany((type) => CLOEntity, (clo) => clo.course)
   clos: CLOEntity[];
 
+  /** Allocations this course is assigned in */
   @OneToMany((type) => AllocationEntity, (allocation) => allocation.course)
   allocations: AllocationEntity[];
 }

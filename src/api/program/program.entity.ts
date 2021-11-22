@@ -6,9 +6,11 @@ import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
 
 @Entity({ name: 'program' })
 export class ProgramEntity extends ParentEntity {
+  /** Name of the Program */
   @Column()
   title: string;
 
+  /** The courses that this program includes */
   @ManyToMany((type) => CourseEntity)
   @JoinTable({
     name: 'program_course',
@@ -17,6 +19,7 @@ export class ProgramEntity extends ParentEntity {
   })
   courses: CourseEntity[];
 
+  /** The PLOs this program hits */
   @ManyToMany((type) => PLOEntity, (plo) => plo.programs)
   @JoinTable({
     name: 'program_plo',
@@ -25,6 +28,7 @@ export class ProgramEntity extends ParentEntity {
   })
   plos: PLOEntity[];
 
+  /** The sections that offer this program */
   @OneToMany((type) => SectionEntity, (section) => section.program)
   @JoinTable({
     name: 'section_program',
