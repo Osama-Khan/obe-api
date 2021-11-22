@@ -17,11 +17,11 @@ import { AllocationEntity } from '@api/allocation/allocation.entity';
 @Entity({ name: 'user' })
 export class UserEntity extends ParentEntity {
   /** Username of the user */
-  @Column()
+  @Column({ unique: true })
   username: string;
 
   /** Email of the user */
-  @Column()
+  @Column({ unique: true })
   email: string;
 
   /** Password of the user */
