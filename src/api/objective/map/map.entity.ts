@@ -6,7 +6,7 @@ import { PLOEntity } from '../plo/plo.entity';
 @Entity({ name: 'clo_plo' })
 export class ObjectiveMapEntity extends ParentEntity {
   /** Percentage indicating how much of the PLO this CLO fulfills */
-  @Column()
+  @Column({ type: 'tinyint' })
   weight: number;
 
   /** The PLO object assigned to this CLO */
