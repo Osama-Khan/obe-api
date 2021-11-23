@@ -11,6 +11,7 @@ import { SectionModule } from './section/section.module';
 import { AllocationModule } from './allocation/allocation.module';
 import { AuthModule } from './auth/auth.module';
 import { ActivityModule } from './activity/activity.module';
+import { AssessmentModule } from './assessment/assessment.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { ActivityModule } from './activity/activity.module';
     UserModule,
     AuthModule,
     ActivityModule,
+    AssessmentModule,
   ],
   controllers: [ApiController],
 })

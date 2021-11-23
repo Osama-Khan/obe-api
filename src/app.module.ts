@@ -13,11 +13,13 @@ import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { ObjectiveMapEntity } from '@api/objective/map/map.entity';
 import { ActivityEntity } from '@api/activity/activity.entity';
 import { ActivityTypeEntity } from '@api/activity/type/activity-type.entity';
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
 
 const apiEntities = [
   ActivityEntity,
   ActivityTypeEntity,
   AllocationEntity,
+  AssessmentEntity,
   CLOEntity,
   CourseEntity,
   ObjectiveMapEntity,
