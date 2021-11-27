@@ -19,7 +19,7 @@ export class CLOService extends ApiService<CLOEntity> {
   async find(criteria?: FindManyOptions<CLOEntity>): Promise<CLOEntity[]> {
     const data = await this.repository.find(criteria);
     const clos = [];
-    if (criteria?.relations.includes('maps')) {
+    if (criteria?.relations?.includes('maps')) {
       for (const c of data) {
         const maps = await this.omRepository.find({
           where: { id: In(c.maps.map((m) => m.id)) },
