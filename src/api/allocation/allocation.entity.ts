@@ -1,8 +1,9 @@
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { CourseEntity } from '@api/course/course.entity';
 import { SectionEntity } from '@api/section/section.entity';
 import { UserEntity } from '@api/user/user.entity';
 import { ParentEntity } from '@shared/entity/ParentEntity';
-import { Entity, JoinColumn, ManyToOne } from 'typeorm';
+import { Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
 
 @Entity({ name: 'allocation' })
 export class AllocationEntity extends ParentEntity {
@@ -26,4 +27,8 @@ export class AllocationEntity extends ParentEntity {
     name: 'course_id',
   })
   course: CourseEntity;
+
+  /** The assessments of this allocation */
+  @OneToMany((type) => AssessmentEntity, (a) => a.type)
+  assessments: AssessmentEntity[];
 }

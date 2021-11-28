@@ -1,3 +1,4 @@
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, OneToMany } from 'typeorm';
 import { ActivityEntity } from '../activity.entity';
@@ -11,4 +12,8 @@ export class ActivityTypeEntity extends ParentEntity {
   /** The activities that are of this type */
   @OneToMany((type) => ActivityEntity, (a) => a.type)
   activities: ActivityEntity[];
+
+  /** The assessments that use this type */
+  @OneToMany((type) => AssessmentEntity, (a) => a.type)
+  assessments: AssessmentEntity[];
 }

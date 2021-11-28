@@ -7,14 +7,14 @@ import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 @Entity({ name: 'assessment' })
 export class AssessmentEntity extends ParentEntity {
   /** The Allocation this assessment is for */
-  @ManyToOne((type) => AllocationEntity)
+  @ManyToOne((type) => AllocationEntity, (alloc) => alloc.assessments)
   @JoinColumn({
     name: 'allocation_id',
   })
   allocation: AllocationEntity;
 
   /** The activity type this assessment is for */
-  @ManyToOne((type) => ActivityTypeEntity)
+  @ManyToOne((type) => ActivityTypeEntity, (type) => type.assessments)
   @JoinColumn({
     name: 'type_id',
   })
@@ -25,7 +25,7 @@ export class AssessmentEntity extends ParentEntity {
   weight: number;
 
   /** The CLO hit by the activity type allocation */
-  @ManyToOne((type) => CLOEntity)
+  @ManyToOne((type) => CLOEntity, (clo) => clo.assessments)
   @JoinColumn({
     name: 'clo_id',
   })

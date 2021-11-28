@@ -1,3 +1,4 @@
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { CourseEntity } from '@api/course/course.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
@@ -23,4 +24,8 @@ export class CLOEntity extends ParentEntity {
   @ManyToOne((type) => CourseEntity, (course) => course.clos)
   @JoinColumn({ name: 'course_id' })
   course: CourseEntity;
+
+  /** The assessments that use this CLO */
+  @OneToMany((type) => AssessmentEntity, (a) => a.type)
+  assessments: AssessmentEntity[];
 }
