@@ -1,10 +1,14 @@
 import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
-import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
+import { Column, Entity, ManyToMany, OneToMany } from 'typeorm';
 import { ObjectiveMapEntity } from '../map/map.entity';
 
 @Entity({ name: 'plo' })
 export class PLOEntity extends ParentEntity {
+  /** Number of the PLO displayed as a unique id. e.g. PLO1 */
+  @Column({ type: 'tinyint', unique: true })
+  number: number;
+
   /** Title of the PLO */
   @Column()
   title: string;
