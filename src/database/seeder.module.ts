@@ -13,6 +13,7 @@ import { UserEntity } from '@api/user/user.entity';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { db } from 'src/dbconfig';
+import { ActivityTypeSeederModule } from './activity-type/activity-type-seeder.module';
 import { PLOSeederModule } from './plo/plo-seeder.module';
 import { RoleSeederModule } from './role/role-seeder.module';
 import { UserSeederModule } from './user/user-seeder.module';
@@ -44,6 +45,7 @@ const seedEntities = [
       entities: seedEntities,
       synchronize: true,
     }),
+    ActivityTypeSeederModule,
     RoleSeederModule,
     UserSeederModule,
     PLOSeederModule,

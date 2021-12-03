@@ -4,10 +4,13 @@ import seedRoles from './role/role-seeder';
 import { SeederModule } from './seeder.module';
 import seedPlos from './plo/plo-seeder';
 import seedUsers from './user/user-seeder';
+import seedActivityTypes from './activity-type/activity-type-seeder';
 
 async function seed() {
   const app = await NestFactory.create(SeederModule);
   LogHelper.success('[SEEDING STARTED]');
+  LogHelper.info('<--- Activity Type Seeding --->');
+  await seedActivityTypes(app);
   LogHelper.info('<--- PLO Seeding --->');
   await seedPlos(app);
   LogHelper.info('<--- Role Seeding --->');
