@@ -30,10 +30,5 @@ export class ProgramEntity extends ParentEntity {
 
   /** The sections that offer this program */
   @OneToMany((type) => SectionEntity, (section) => section.program)
-  @JoinTable({
-    name: 'section_program',
-    joinColumn: { name: 'program_id' },
-    inverseJoinColumn: { name: 'section_id' },
-  })
   sections: SectionEntity[];
 }
