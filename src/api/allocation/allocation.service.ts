@@ -8,6 +8,7 @@ import { Workbook } from 'exceljs';
 import { ObjectID, Repository } from 'typeorm';
 import { CourseEntity } from '@api/course/course.entity';
 import { ExcelDataNotFoundException } from '../allocation/exceptions';
+import { ProgramEntity } from '@api/program/program.entity';
 
 @Injectable()
 export class AllocationService extends ApiService<AllocationEntity> {
@@ -16,6 +17,8 @@ export class AllocationService extends ApiService<AllocationEntity> {
     repository: Repository<AllocationEntity>,
     @InjectRepository(CourseEntity)
     private courseRepository: Repository<CourseEntity>,
+    @InjectRepository(ProgramEntity)
+    private programRepository: Repository<ProgramEntity>,
     @InjectRepository(SectionEntity)
     private sectionRepository: Repository<SectionEntity>,
     @InjectRepository(UserEntity)
@@ -51,7 +54,7 @@ export class AllocationService extends ApiService<AllocationEntity> {
         );
       }
 
-      const { name, semester, program } = sectionObj;
+      const { name, semester, program: programName } = sectionObj;
 
       // Subject validation
       const subject = await this.courseRepository.findOne({
@@ -60,9 +63,13 @@ export class AllocationService extends ApiService<AllocationEntity> {
       if (!subject)
         throw new ExcelDataNotFoundException('Subject code', subjectCode, n);
 
+      const program = await this.programRepository.findOne({
+        where: { title: programName },
+      });
+
       // Section validation
       const section = await this.sectionRepository.findOne({
-        where: { name, semester, program: { title: program } },
+        where: { name, semester, program },
         relations: ['program'],
       });
       if (!section) {
