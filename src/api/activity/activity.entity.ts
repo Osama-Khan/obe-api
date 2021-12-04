@@ -1,6 +1,7 @@
 import { SectionEntity } from '@api/section/section.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
-import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
+import { ActivityMapEntity } from './map/map.entity';
 import { ActivityTypeEntity } from './type/activity-type.entity';
 
 @Entity({ name: 'activity' })
@@ -17,6 +18,12 @@ export class ActivityEntity extends ParentEntity {
   @ManyToOne((type) => ActivityTypeEntity, (at) => at.activities)
   @JoinColumn({ name: 'type_id' })
   type: ActivityTypeEntity;
+
+  /** Maps of this Activity with CLOs along with weights */
+  @OneToMany((type) => ActivityMapEntity, (obj) => obj.activity, {
+    cascade: true,
+  })
+  maps: ActivityMapEntity[];
 
   /** The section this activity has been assigned to */
   @ManyToOne((type) => SectionEntity, (sec) => sec.activities)

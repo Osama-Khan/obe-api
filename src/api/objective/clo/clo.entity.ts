@@ -1,3 +1,4 @@
+import { ActivityMapEntity } from '@api/activity/map/map.entity';
 import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { CourseEntity } from '@api/course/course.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
@@ -19,6 +20,12 @@ export class CLOEntity extends ParentEntity {
     cascade: true,
   })
   maps: ObjectiveMapEntity[];
+
+  /** Maps of this CLO with Activities along with weights */
+  @OneToMany((type) => ActivityMapEntity, (obj) => obj.clo, {
+    cascade: true,
+  })
+  activityMaps: ActivityMapEntity[];
 
   /** Course that this CLO belongs to */
   @ManyToOne((type) => CourseEntity, (course) => course.clos)
