@@ -7,6 +7,10 @@ import { ObjectiveMapEntity } from '../map/map.entity';
 
 @Entity({ name: 'clo' })
 export class CLOEntity extends ParentEntity {
+  /** Number of the CLO */
+  @Column({ type: 'tinyint' })
+  number: number;
+
   /** Title of the CLO */
   @Column()
   title: string;
