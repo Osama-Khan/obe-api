@@ -12,6 +12,7 @@ import { AllocationModule } from './allocation/allocation.module';
 import { AuthModule } from './auth/auth.module';
 import { ActivityModule } from './activity/activity.module';
 import { AssessmentModule } from './assessment/assessment.module';
+import { MapsModule } from './maps/maps.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { AssessmentModule } from './assessment/assessment.module';
     AllocationModule,
     CourseModule,
     ObjectiveModule,
+    MapsModule,
     ProgramModule,
     RoleModule,
     SectionModule,

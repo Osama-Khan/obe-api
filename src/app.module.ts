@@ -15,6 +15,7 @@ import { ActivityEntity } from '@api/activity/activity.entity';
 import { ActivityTypeEntity } from '@api/activity/type/activity-type.entity';
 import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { ActivityMapEntity } from '@api/activity/map/map.entity';
+import { ProgramPloMapEntity } from '@api/maps/program-plo/map.entity';
 
 const apiEntities = [
   ActivityEntity,
@@ -27,6 +28,7 @@ const apiEntities = [
   ObjectiveMapEntity,
   PLOEntity,
   ProgramEntity,
+  ProgramPloMapEntity,
   RoleEntity,
   SectionEntity,
   UserEntity,
