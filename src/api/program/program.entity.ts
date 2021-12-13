@@ -1,5 +1,5 @@
 import { CourseEntity } from '@api/course/course.entity';
-import { PLOEntity } from '@api/objective/plo/plo.entity';
+import { ProgramPloMapEntity } from '@api/maps/program-plo/map.entity';
 import { SectionEntity } from '@api/section/section.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
@@ -19,14 +19,9 @@ export class ProgramEntity extends ParentEntity {
   })
   courses: CourseEntity[];
 
-  /** The PLOs this program hits */
-  @ManyToMany((type) => PLOEntity, (plo) => plo.programs)
-  @JoinTable({
-    name: 'program_plo',
-    joinColumn: { name: 'program_id' },
-    inverseJoinColumn: { name: 'plo_id' },
-  })
-  plos: PLOEntity[];
+  /** Maps containing the PLOs this program hits */
+  @OneToMany((type) => ProgramPloMapEntity, (map) => map.program)
+  ploMaps: ProgramPloMapEntity[];
 
   /** The sections that offer this program */
   @OneToMany((type) => SectionEntity, (section) => section.program)
