@@ -32,4 +32,26 @@ export class ActivityService extends ApiService<ActivityEntity> {
     }
     return activities.length > 0 ? activities : data;
   }
+
+  /** Gets CLOs with their cumulative weights in given section
+   * @param id ID of the section
+   */
+  async getCloWeightsInSection(id: string) {
+    const activities = await this.find({
+      relations: ['maps'],
+      where: { section: id },
+    });
+    const clos: { id: string; weight: number }[] = [];
+    activities.forEach((a) => {
+      a.maps.forEach((a) => {
+        const prev = clos.findIndex((c) => c.id === a.clo.id);
+        if (prev !== -1) {
+          clos[prev].weight += a.weight;
+        } else {
+          clos.push({ id: a.clo.id, weight: a.weight });
+        }
+      });
+    });
+    return clos;
+  }
 }
