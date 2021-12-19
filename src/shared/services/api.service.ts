@@ -82,10 +82,11 @@ export abstract class ApiService<Entity> {
   }
 
   /**
-   * Counts rows in entity
+   * Counts rows in entity matching given criteria
+   * @param criteria The criteria to filter entities
    * @returns A number representing count of rows
    */
-  async count(): Promise<number> {
-    return await this.repository.count();
+  async count(criteria?: FindManyOptions<Entity>): Promise<number> {
+    return await this.repository.count(criteria);
   }
 }

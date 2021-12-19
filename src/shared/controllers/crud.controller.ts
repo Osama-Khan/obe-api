@@ -8,7 +8,7 @@ import { DeepPartial, FindManyOptions, FindOneOptions } from 'typeorm';
  */
 export abstract class CrudController<
   Entity,
-  Service extends ApiService<Entity>,
+  Service extends ApiService<Entity>
 > {
   /**
    * @param service The ApiService of the given entity
@@ -46,5 +46,13 @@ export abstract class CrudController<
   @Delete(':id')
   delete(@Param('id') id: string) {
     return this.service.remove(id);
+  }
+
+  /** Gets count of entities matching the given criteria */
+  @Post('meta/count')
+  getCount(
+    @Body(new CriteriaValidationPipe()) criteria?: FindManyOptions<Entity>,
+  ) {
+    return this.service.count(criteria);
   }
 }
