@@ -1,4 +1,4 @@
-import { Controller, Inject } from '@nestjs/common';
+import { Controller, Get, Inject, Param } from '@nestjs/common';
 import { CrudController } from '@shared/controllers/crud.controller';
 import { ActivityEntity } from './activity.entity';
 import { ActivityService } from './activity.service';
@@ -10,5 +10,13 @@ export class ActivityController extends CrudController<
 > {
   constructor(@Inject(ActivityService) service: ActivityService) {
     super(service);
+  }
+
+  /** Gets CLOs with their cumulative weights in given section
+   * @param sectionId ID of the section
+   */
+  @Get('maps/:id')
+  getCloWeightsInSection(@Param('id') sectionId: string) {
+    return this.service.getCloWeightsInSection(sectionId);
   }
 }
