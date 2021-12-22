@@ -54,4 +54,26 @@ export class ActivityService extends ApiService<ActivityEntity> {
     });
     return clos;
   }
+
+  /** Gets number of activity for given section grouped by type
+   * @param id ID of the section
+   * @returns Number of activities grouped by type in the given section
+   */
+  async getActivityTypeCounts(id: string) {
+    const counts: { id: string; name: string; count: number }[] = [];
+    const activities = await this.find({
+      where: { section: id },
+      select: ['id'],
+      relations: ['type'],
+    });
+    activities.forEach((a) => {
+      const prev = counts.findIndex((c) => c.id === a.type.id);
+      if (prev !== -1) {
+        counts[prev].count++;
+      } else {
+        counts.push({ id: a.type.id, name: a.type.name, count: 1 });
+      }
+    });
+    return counts;
+  }
 }
