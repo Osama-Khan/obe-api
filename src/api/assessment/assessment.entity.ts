@@ -1,17 +1,17 @@
 import { ActivityTypeEntity } from '@api/activity/type/activity-type.entity';
-import { AllocationEntity } from '@api/allocation/allocation.entity';
+import { CourseEntity } from '@api/course/course.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { ParentEntity } from '@shared/entity/ParentEntity';
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 
 @Entity({ name: 'assessment' })
 export class AssessmentEntity extends ParentEntity {
-  /** The Allocation this assessment is for */
-  @ManyToOne((type) => AllocationEntity, (alloc) => alloc.assessments)
+  /** The Course this assessment is for */
+  @ManyToOne((type) => CourseEntity, (course) => course.assessments)
   @JoinColumn({
-    name: 'allocation_id',
+    name: 'course_id',
   })
-  allocation: AllocationEntity;
+  course: CourseEntity;
 
   /** The activity type this assessment is for */
   @ManyToOne((type) => ActivityTypeEntity, (type) => type.assessments)

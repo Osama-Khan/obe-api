@@ -1,4 +1,5 @@
 import { AllocationEntity } from '@api/allocation/allocation.entity';
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
@@ -34,4 +35,8 @@ export class CourseEntity extends ParentEntity {
   /** Allocations this course is assigned in */
   @OneToMany((type) => AllocationEntity, (allocation) => allocation.course)
   allocations: AllocationEntity[];
+
+  /** The assessments of this course */
+  @OneToMany((type) => AssessmentEntity, (a) => a.course)
+  assessments: AssessmentEntity[];
 }

@@ -27,8 +27,4 @@ export class AllocationEntity extends ParentEntity {
     name: 'course_id',
   })
   course: CourseEntity;
-
-  /** The assessments of this allocation */
-  @OneToMany((type) => AssessmentEntity, (a) => a.type)
-  assessments: AssessmentEntity[];
 }
