@@ -14,6 +14,10 @@ export class ActivityEntity extends ParentEntity {
   @Column({ type: 'text', nullable: true })
   description: string;
 
+  /** Total marks obtainable in the activity */
+  @Column({ type: 'smallint' })
+  marks: number;
+
   /** Type of the activity */
   @ManyToOne((type) => ActivityTypeEntity, (at) => at.activities)
   @JoinColumn({ name: 'type_id' })
