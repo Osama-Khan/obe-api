@@ -1,4 +1,4 @@
-import { Controller, Get, Inject, Param } from '@nestjs/common';
+import { Body, Controller, Get, Inject, Param, Put } from '@nestjs/common';
 import { CrudController } from '@shared/controllers/crud.controller';
 import { ActivityEntity } from './activity.entity';
 import { ActivityService } from './activity.service';
@@ -26,5 +26,11 @@ export class ActivityController extends CrudController<
   @Get('section-type-count/:id')
   getActivityTypeCounts(@Param('id') sectionId: string) {
     return this.service.getActivityTypeCounts(sectionId);
+  }
+
+  /** Sets evaluations for an activity */
+  @Put(':id/evaluations')
+  setEvaluations(@Param('id') id: string, @Body() data: any) {
+    return this.service.setEvaluations(id, data);
   }
 }

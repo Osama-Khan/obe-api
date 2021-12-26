@@ -3,6 +3,7 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { ApiService } from '@shared/services/api.service';
 import { FindManyOptions, In, Repository } from 'typeorm';
 import { ActivityEntity } from './activity.entity';
+import { EvaluationEntity } from './evaluation/evaluation.entity';
 import { ActivityMapEntity } from './map/map.entity';
 
 @Injectable()
@@ -11,6 +12,8 @@ export class ActivityService extends ApiService<ActivityEntity> {
     @InjectRepository(ActivityEntity) repository: Repository<ActivityEntity>,
     @InjectRepository(ActivityMapEntity)
     private amRepository: Repository<ActivityMapEntity>,
+    @InjectRepository(EvaluationEntity)
+    private evalRepository: Repository<EvaluationEntity>,
   ) {
     super(repository);
   }
@@ -75,5 +78,27 @@ export class ActivityService extends ApiService<ActivityEntity> {
       }
     });
     return counts;
+  }
+
+  /** Sets evaluations for an activity */
+  async setEvaluations(
+    id: string,
+    data: { user: { id: string }; marks: number }[],
+  ) {
+    const res = [];
+    for (const d of data) {
+      const evaluation = this.evalRepository.create({ ...d, activity: { id } });
+      const prev = await this.evalRepository.findOne({
+        where: { activity: { id }, user: d.user },
+      });
+      let r = prev;
+      if (prev) {
+        await this.evalRepository.update(prev.id, evaluation);
+      } else {
+        r = await this.evalRepository.save(evaluation);
+      }
+      res.push(r);
+    }
+    return res;
   }
 }
