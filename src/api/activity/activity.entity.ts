@@ -1,6 +1,7 @@
 import { SectionEntity } from '@api/section/section.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
+import { EvaluationEntity } from './evaluation/evaluation.entity';
 import { ActivityMapEntity } from './map/map.entity';
 import { ActivityTypeEntity } from './type/activity-type.entity';
 
@@ -28,6 +29,10 @@ export class ActivityEntity extends ParentEntity {
     cascade: true,
   })
   maps: ActivityMapEntity[];
+
+  /** Evaluations of the activity */
+  @OneToMany((type) => EvaluationEntity, (evaluation) => evaluation.activity)
+  evaluations: EvaluationEntity[];
 
   /** The section this activity has been assigned to */
   @ManyToOne((type) => SectionEntity, (sec) => sec.activities)

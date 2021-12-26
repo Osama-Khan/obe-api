@@ -13,6 +13,7 @@ import * as bcrypt from 'bcrypt';
 import { RoleEntity } from '@api/role/role.entity';
 import { SectionEntity } from '@api/section/section.entity';
 import { AllocationEntity } from '@api/allocation/allocation.entity';
+import { EvaluationEntity } from '@api/activity/evaluation/evaluation.entity';
 
 @Entity({ name: 'user' })
 export class UserEntity extends ParentEntity {
@@ -49,6 +50,10 @@ export class UserEntity extends ParentEntity {
   /** Allocations of the user (teacher) to different sections */
   @OneToMany((type) => AllocationEntity, (allocation) => allocation.user)
   allocations: AllocationEntity[];
+
+  /** Evaluations of the user */
+  @OneToMany((type) => EvaluationEntity, (evaluation) => evaluation.user)
+  evaluations: EvaluationEntity[];
 
   /** Encryption method for password before insertion */
   @BeforeInsert()

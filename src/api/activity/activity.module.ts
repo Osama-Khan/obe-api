@@ -3,6 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ActivityController } from './activity.controller';
 import { ActivityEntity } from './activity.entity';
 import { ActivityService } from './activity.service';
+import { EvaluationEntity } from './evaluation/evaluation.entity';
 import { ActivityMapController } from './map/map.controller';
 import { ActivityMapEntity } from './map/map.entity';
 import { ActivityMapService } from './map/map.service';
@@ -16,6 +17,7 @@ import { ActivityTypeService } from './type/activity-type.service';
       ActivityEntity,
       ActivityTypeEntity,
       ActivityMapEntity,
+      EvaluationEntity,
     ]),
   ],
   controllers: [
