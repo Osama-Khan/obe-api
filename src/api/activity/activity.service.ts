@@ -1,7 +1,13 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { ApiService } from '@shared/services/api.service';
-import { FindManyOptions, In, Repository } from 'typeorm';
+import {
+  FindConditions,
+  FindManyOptions,
+  FindOneOptions,
+  In,
+  Repository,
+} from 'typeorm';
 import { ActivityEntity } from './activity.entity';
 import { EvaluationEntity } from './evaluation/evaluation.entity';
 import { ActivityMapEntity } from './map/map.entity';
@@ -16,6 +22,30 @@ export class ActivityService extends ApiService<ActivityEntity> {
     private evalRepository: Repository<EvaluationEntity>,
   ) {
     super(repository);
+  }
+
+  /** Appends complete map or eval objects if their relations are included */
+  async findOne(
+    conditions: FindConditions<ActivityEntity>,
+    criteria?: FindOneOptions<ActivityEntity>,
+  ): Promise<ActivityEntity> {
+    const data = await super.findOne(conditions, criteria);
+    const hasMaps = criteria?.relations?.includes('maps');
+    const hasEvals = criteria?.relations?.includes('evaluations');
+    if (hasMaps || hasEvals) {
+      if (hasMaps)
+        data.maps = await this.amRepository.find({
+          where: { id: In(data.maps.map((m) => m.id)) },
+          relations: ['clo'],
+        });
+      if (hasEvals)
+        data.evaluations = await this.evalRepository.find({
+          where: { id: In(data.evaluations.map((e) => e.id)) },
+          relations: ['user'],
+        });
+    }
+
+    return data;
   }
 
   /** Appends complete map objects if maps relation is included */
