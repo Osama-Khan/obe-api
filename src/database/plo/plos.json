@@ -1,51 +1,51 @@
 [
   {
-    "number": 1,
+    "passing": 40,
     "title": "Academic Education",
     "description": "To prepare graduates as computing professionals."
   },
   {
-    "number": 2,
+    "passing": 40,
     "title": "Knowledge for Solving Computing Problems",
     "description": "Apply knowledge of computing fundamentals, knowledge of a computing specialization, and mathematics, science, and domain knowledge appropriate for the computing specialization to the abstraction and conceptualization of computing models from defined problems and requirements."
   },
   {
-    "number": 3,
+    "passing": 40,
     "title": "Problem Analysis",
     "description": "Identify, formulate, research literature, and solve complex computing problems reaching substantiated conclusions using fundamental principles of mathematics, computing sciences, and relevant domain disciplines."
   },
   {
-    "number": 4,
+    "passing": 40,
     "title": "Design & Development of Solutions",
     "description": "Design and evaluate solutions for complex computing  problems, and design and evaluate systems, components,  or processes that meet specified needs with appropriate  consideration for public health and safety, cultural,  societal, and environmental considerations."
   },
   {
-    "number": 5,
+    "passing": 40,
     "title": "Modern Tool Usage",
     "description": "Create, select, adapt and apply appropriate techniques,resources, and modern computing tools to complexcomputing activities, with an understanding of thelimitations."
   },
   {
-    "number": 6,
+    "passing": 40,
     "title": "Individual & Teamwork",
     "description": "Function effectively as an individual and as a member orleader in diverse teams and in multi-disciplinary settings."
   },
   {
-    "number": 7,
+    "passing": 40,
     "title": "Communication",
     "description": "Communicate effectively with the computing community and with society at large about complex computing activities by being able to comprehend and write effective reports, design documentation, make effective presentations, and give and understand clear instructions."
   },
   {
-    "number": 8,
+    "passing": 40,
     "title": "Computing Professionalism and Society",
     "description": "Understand and assess societal, health, safety, legal, andcultural issues within local and global contexts, and theconsequential responsibilities relevant to professionalcomputing practice."
   },
   {
-    "number": 9,
+    "passing": 40,
     "title": "Ethics",
     "description": "Understand and commit to professional ethics, responsibilities, and norms of professional computing practice."
   },
   {
-    "number": 10,
+    "passing": 40,
     "title": "Life-long Learning",
     "description": "Recognize the need, and have the ability, to engage inindependent learning for continual development as acomputing professional."
   }
