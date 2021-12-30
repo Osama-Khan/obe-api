@@ -1,4 +1,4 @@
-import { AssessmentEntity } from '@api/assessment/assessment.entity';
+import { ActivityEntity } from '@api/activity/activity.entity';
 import { CourseEntity } from '@api/course/course.entity';
 import { SectionEntity } from '@api/section/section.entity';
 import { UserEntity } from '@api/user/user.entity';
@@ -27,4 +27,8 @@ export class AllocationEntity extends ParentEntity {
     name: 'course_id',
   })
   course: CourseEntity;
+
+  /** Activities present in this allocation */
+  @OneToMany((type) => ActivityEntity, (activity) => activity.allocation)
+  activities: ActivityEntity[];
 }
