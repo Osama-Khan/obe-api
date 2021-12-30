@@ -1,5 +1,7 @@
 import { ActivityService } from '@api/activity/activity.service';
 import { EvaluationEntity } from '@api/activity/evaluation/evaluation.entity';
+import { AllocationEntity } from '@api/allocation/allocation.entity';
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { ProgramPloMapEntity } from '@api/maps/program-plo/map.entity';
 import { CLOService } from '@api/objective/clo/clo.service';
 import { PLOEntity } from '@api/objective/plo/plo.entity';
@@ -14,6 +16,10 @@ import { UserEntity } from './user.entity';
 export class UserService extends ApiService<UserEntity> {
   constructor(
     @InjectRepository(UserEntity) repository: Repository<UserEntity>,
+    @InjectRepository(AllocationEntity)
+    private allocRepo: Repository<AllocationEntity>,
+    @InjectRepository(AssessmentEntity)
+    private asmRepo: Repository<AssessmentEntity>,
     @InjectRepository(EvaluationEntity)
     private evalRepo: Repository<EvaluationEntity>,
     @InjectRepository(SectionEntity)
@@ -64,8 +70,20 @@ export class UserService extends ApiService<UserEntity> {
       e.activity = await this.actService.findOne(
         { id: e.activity.id },
         {
-          relations: ['section', 'maps'],
+          relations: ['allocation', 'maps', 'type'],
         },
+      );
+
+      const { course } = await this.allocRepo.findOne(
+        e.activity.allocation.id,
+        { relations: ['course'] },
+      );
+      const assessments = await this.asmRepo.find({
+        where: { course },
+        relations: ['type', 'clo'],
+      });
+      const typeAsm = assessments.filter(
+        (a) => a.type.id === e.activity.type.id,
       );
 
       const clos = await this.cloService.find({
@@ -74,12 +92,14 @@ export class UserService extends ApiService<UserEntity> {
       });
 
       clos.map((c) => {
+        const weightFactor =
+          typeAsm.find((a) => a.clo.id === c.id).weight / 100;
         c.maps.map((m) => {
           const resInd = results.findIndex((r) => r.plo.id === m.plo.id);
           const evaluated = m.weight;
           const achieved = m.weight * marks;
-          results[resInd].evaluated += evaluated;
-          results[resInd].achieved += achieved;
+          results[resInd].evaluated += evaluated * weightFactor;
+          results[resInd].achieved += achieved * weightFactor;
         });
       });
 
