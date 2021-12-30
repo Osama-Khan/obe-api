@@ -13,6 +13,10 @@ export class PLOEntity extends ParentEntity {
   @Column({ type: 'text' })
   description: string;
 
+  /** Percentage required to pass this PLO */
+  @Column({ type: 'tinyint' })
+  passing: number;
+
   /** Maps of this PLO with CLOs along with their weights */
   @OneToMany((type) => ObjectiveMapEntity, (obj) => obj.plo)
   maps: ObjectiveMapEntity[];
