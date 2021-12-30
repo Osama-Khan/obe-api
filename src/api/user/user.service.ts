@@ -48,14 +48,17 @@ export class UserService extends ApiService<UserEntity> {
       relations: ['user', 'activity'],
     });
 
-    let results: { plo: PLOEntity; evaluated: number; achieved: number }[] =
-      ploMaps
-        .map((m) => ({
-          plo: { ...m.plo, number: m.number },
-          evaluated: 0,
-          achieved: 0,
-        }))
-        .sort((a, b) => a.plo.number - b.plo.number);
+    let results: {
+      plo: PLOEntity;
+      evaluated: number;
+      achieved: number;
+    }[] = ploMaps
+      .map((m) => ({
+        plo: { ...m.plo, number: m.number },
+        evaluated: 0,
+        achieved: 0,
+      }))
+      .sort((a, b) => a.plo.number - b.plo.number);
     for (const e of evals) {
       const marks = e.marks / e.activity.marks;
       e.activity = await this.actService.findOne(
@@ -81,28 +84,6 @@ export class UserService extends ApiService<UserEntity> {
       });
 
       return results;
-
-      // const clos = await this.cloService.find({
-      //   where: { course: alloc.course },
-      //   relations: ['maps', 'activityMaps'],
-      // });
-
-      // const alloc = await this.allocRepo.findOne({
-      //   where: { section: e.activity.section },
-      //   relations: ['course'],
-      // });
-      // const clos = await this.cloService.find({
-      //   where: { course: alloc.course },
-      //   relations: ['maps', 'activityMaps'],
-      // });
     }
-    // let acts = await this.actRepo.find({where: {id: In(evals.map(e => e.activity.id))}, relations: ['allocation']});
-    // let allocs = await this.allocRepo.find({where: {activity: {id: In(evals.map(e => e.activity.id))}}, relations: ['course']});
-    // let clos = await this.cloService.find({where: {course: {id: In(allocs.map(a => a.course.id))}}, relations: ['maps', 'activityMaps']});
-    // let assessment =
-    //evals = evals.map(e => {
-    //  e.activity = acts.find(a => a.id === e.activity.id);
-    //  return e;
-    //});
   }
 }
