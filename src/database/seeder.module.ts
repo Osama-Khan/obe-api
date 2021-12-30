@@ -1,8 +1,11 @@
 import { ActivityEntity } from '@api/activity/activity.entity';
+import { EvaluationEntity } from '@api/activity/evaluation/evaluation.entity';
+import { ActivityMapEntity } from '@api/activity/map/map.entity';
 import { ActivityTypeEntity } from '@api/activity/type/activity-type.entity';
 import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { CourseEntity } from '@api/course/course.entity';
+import { ProgramPloMapEntity } from '@api/maps/program-plo/map.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { ObjectiveMapEntity } from '@api/objective/map/map.entity';
 import { PLOEntity } from '@api/objective/plo/plo.entity';
@@ -21,13 +24,16 @@ import { UserSeederModule } from './user/user-seeder.module';
 const seedEntities = [
   ActivityEntity,
   ActivityTypeEntity,
+  ActivityMapEntity,
   AllocationEntity,
   AssessmentEntity,
   CLOEntity,
   CourseEntity,
+  EvaluationEntity,
   ObjectiveMapEntity,
   PLOEntity,
   ProgramEntity,
+  ProgramPloMapEntity,
   RoleEntity,
   SectionEntity,
   UserEntity,
