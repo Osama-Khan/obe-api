@@ -20,12 +20,12 @@ export class ActivityController extends CrudController<
     return this.service.getCloWeightsInSection(sectionId);
   }
 
-  /** Gets number of activities grouped by types for given section
-   * @param sectionId ID of the section
+  /** Gets number of activities grouped by types for given allocation
+   * @param allocationId ID of the allocation
    */
-  @Get('section-type-count/:id')
-  getActivityTypeCounts(@Param('id') sectionId: string) {
-    return this.service.getActivityTypeCounts(sectionId);
+  @Get('allocation-type-count/:id')
+  getActivityTypeCounts(@Param('id') allocationId: string) {
+    return this.service.getActivityTypeCounts(allocationId);
   }
 
   /** Sets evaluations for an activity */

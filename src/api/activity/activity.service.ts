@@ -66,13 +66,13 @@ export class ActivityService extends ApiService<ActivityEntity> {
     return activities.length > 0 ? activities : data;
   }
 
-  /** Gets CLOs with their cumulative weights in given section
-   * @param id ID of the section
+  /** Gets CLOs with their cumulative weights in given allocation
+   * @param id ID of the allocation
    */
   async getCloWeightsInSection(id: string) {
     const activities = await this.find({
       relations: ['maps'],
-      where: { section: id },
+      where: { allocation: id },
     });
     const clos: { id: string; weight: number }[] = [];
     activities.forEach((a) => {
@@ -88,14 +88,14 @@ export class ActivityService extends ApiService<ActivityEntity> {
     return clos;
   }
 
-  /** Gets number of activity for given section grouped by type
-   * @param id ID of the section
-   * @returns Number of activities grouped by type in the given section
+  /** Gets number of activity for given allocation grouped by type
+   * @param id ID of the allocation
+   * @returns Number of activities grouped by type in the given allocation
    */
   async getActivityTypeCounts(id: string) {
     const counts: { id: string; name: string; count: number }[] = [];
     const activities = await this.find({
-      where: { section: id },
+      where: { allocation: id },
       select: ['id'],
       relations: ['type'],
     });
