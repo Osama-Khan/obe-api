@@ -1,3 +1,4 @@
+import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import { CLOEntity } from '../clo/clo.entity';
@@ -18,4 +19,9 @@ export class ObjectiveMapEntity extends ParentEntity {
   @ManyToOne((type) => CLOEntity, (clo) => clo.maps)
   @JoinColumn({ name: 'clo_id' })
   clo: CLOEntity;
+
+  /** The program this mapping is relevant to */
+  @ManyToOne((type) => ProgramEntity)
+  @JoinColumn({ name: 'program_id' })
+  program: ProgramEntity;
 }
