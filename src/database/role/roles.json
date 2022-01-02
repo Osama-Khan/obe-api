@@ -1,6 +1,6 @@
 [
-  { "name": "admin" },
-  { "name": "hod" },
-  { "name": "teacher" },
-  { "name": "student" }
+  { "id": "admin", "name": "Admin" },
+  { "id": "hod", "name": "HOD" },
+  { "id": "teacher", "name": "Teacher" },
+  { "id": "student", "name": "Student" }
 ]
