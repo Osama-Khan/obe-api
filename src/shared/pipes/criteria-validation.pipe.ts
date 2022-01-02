@@ -27,11 +27,13 @@ type CriteriaWhere = {
 
 /** Validates Criteria object in body */
 export default class CriteriaValidationPipe implements PipeTransform {
-  transform(criteria?: { where: CriteriaWhere[] }) {
+  transform(criteria?: { where: CriteriaWhere[][] }) {
     if (!criteria?.where) return criteria;
     const where = criteria.where.map((w) => {
       const obj: any = {};
-      obj[w.key] = this.toFindOperator(w.operator, w.value);
+      w.forEach((_w) => {
+        obj[_w.key] = this.toFindOperator(_w.operator, _w.value);
+      });
       return obj;
     });
     criteria.where = where;
