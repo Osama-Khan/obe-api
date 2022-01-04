@@ -78,13 +78,10 @@ export class UserService extends ApiService<UserEntity> {
         e.activity.allocation.id,
         { relations: ['course'] },
       );
-      const assessments = await this.asmRepo.find({
-        where: { course },
+      const typeAsm = await this.asmRepo.find({
+        where: { course, type: { id: e.activity.type.id } },
         relations: ['type', 'clo'],
       });
-      const typeAsm = assessments.filter(
-        (a) => a.type.id === e.activity.type.id,
-      );
 
       const clos = await this.cloService.find({
         where: { id: In(e.activity.maps.map((m) => m.clo.id)) },
@@ -102,9 +99,8 @@ export class UserService extends ApiService<UserEntity> {
           results[resInd].achieved += achieved * weightFactor;
         });
       });
-
-      return results;
     }
+    return results;
   }
 
   /**
