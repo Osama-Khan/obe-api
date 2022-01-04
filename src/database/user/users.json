@@ -1,6 +1,6 @@
 [
   {
-    "username": "admin",
+    "username": "Admin",
     "firstName": "Super",
     "lastName": "Admin",
     "email": "admin1@obe.com",
@@ -9,7 +9,7 @@
     "dateOfBirth": "1970-01-01 00:00:00"
   },
   {
-    "username": "hod",
+    "username": "HOD",
     "firstName": "Department",
     "lastName": "Head",
     "email": "hod1@obe.com",
@@ -18,7 +18,7 @@
     "dateOfBirth": "1970-01-01 00:00:00"
   },
   {
-    "username": "teacher",
+    "username": "Teacher",
     "firstName": "Teacher",
     "lastName": "User",
     "email": "teacher1@obe.com",
@@ -27,7 +27,7 @@
     "dateOfBirth": "1970-01-01 00:00:00"
   },
   {
-    "username": "student",
+    "username": "Student",
     "firstName": "Student",
     "lastName": "Test",
     "email": "student1@obe.com",
