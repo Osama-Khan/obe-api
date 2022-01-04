@@ -106,4 +106,62 @@ export class UserService extends ApiService<UserEntity> {
       return results;
     }
   }
+
+  /**
+   * Returns detailed result of the student
+   * @param id ID of the student
+   * @param ploId ID of the plo
+   * @returns Result object containing detailed evaluations
+   */
+  async getResultDetail(id: string, ploId: string) {
+    const user = await this.findOne({ id }, { relations: ['sections'] });
+    if (!user) throw new NotFoundException('User not found!');
+
+    const section = await this.sectionRepo.findOne(user.sections[0].id, {
+      relations: ['program'],
+    });
+    const ploMap = await this.progPloRepo.findOne(ploId, {
+      relations: ['plo'],
+    });
+
+    let evals = await this.evalRepo.find({
+      where: { user: { id } },
+      relations: ['user', 'activity'],
+    });
+
+    let results: any[] = [];
+    for (const e of evals) {
+      e.activity = await this.actService.findOne(
+        { id: e.activity.id },
+        {
+          relations: ['allocation', 'maps', 'type'],
+        },
+      );
+
+      let clos = await this.cloService.find({
+        where: { id: In(e.activity.maps.map((m) => m.clo.id)) },
+        relations: ['maps'],
+      });
+
+      clos = clos.filter((c) => c.maps.some((m) => m.plo.id === ploId));
+      if (clos.length === 0) continue;
+
+      const { course } = await this.allocRepo.findOne(
+        e.activity.allocation.id,
+        { relations: ['course'] },
+      );
+      const assessments = await this.asmRepo.find({
+        where: { course, type: { id: e.activity.type.id } },
+        relations: ['type', 'clo'],
+      });
+
+      results.push({
+        activity: e.activity,
+        obtained: e.marks,
+        assessments,
+        clos,
+      });
+    }
+    return results;
+  }
 }

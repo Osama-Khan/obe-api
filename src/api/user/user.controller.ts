@@ -18,4 +18,15 @@ export class UserController extends CrudController<UserEntity, UserService> {
   getResult(@Param('id') id: string) {
     return this.service.getResult(id);
   }
+
+  /**
+   * Returns detailed result of the student
+   * @param id ID of the student
+   * @param ploId ID of the plo
+   * @returns Result object containing detailed evaluations
+   */
+  @Get(':id/result/plo/:ploId')
+  getResultDetail(@Param('id') id: string, @Param('ploId') ploId: string) {
+    return this.service.getResultDetail(id, ploId);
+  }
 }
