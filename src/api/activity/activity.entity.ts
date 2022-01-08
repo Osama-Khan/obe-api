@@ -1,10 +1,9 @@
 import { AllocationEntity } from '@api/allocation/allocation.entity';
-import { CourseEntity } from '@api/course/course.entity';
-import { SectionEntity } from '@api/section/section.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
 import { EvaluationEntity } from './evaluation/evaluation.entity';
 import { ActivityMapEntity } from './map/map.entity';
+import { QuestionEntity } from './question/question.entity';
 import { ActivityTypeEntity } from './type/activity-type.entity';
 
 @Entity({ name: 'activity' })
@@ -40,4 +39,8 @@ export class ActivityEntity extends ParentEntity {
   @ManyToOne((type) => AllocationEntity, (alloc) => alloc.activities)
   @JoinColumn({ name: 'allocation_id' })
   allocation: AllocationEntity;
+
+  /** Questions in this activity */
+  @OneToMany((type) => QuestionEntity, (question) => question.activity)
+  questions: QuestionEntity[];
 }
