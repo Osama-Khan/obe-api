@@ -18,7 +18,11 @@ export class QuestionEntity extends ParentEntity {
 
   /** CLOs this question hits */
   @ManyToMany((type) => CLOEntity)
-  @JoinTable({ name: 'question_clo' })
+  @JoinTable({
+    name: 'question_clo',
+    joinColumn: { name: 'question_id' },
+    inverseJoinColumn: { name: 'clo_id' },
+  })
   clos: CLOEntity[];
 
   /** Activity this question is in */
