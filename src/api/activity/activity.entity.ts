@@ -41,6 +41,8 @@ export class ActivityEntity extends ParentEntity {
   allocation: AllocationEntity;
 
   /** Questions in this activity */
-  @OneToMany((type) => QuestionEntity, (question) => question.activity)
+  @OneToMany((type) => QuestionEntity, (question) => question.activity, {
+    cascade: true,
+  })
   questions: QuestionEntity[];
 }
