@@ -1,0 +1,569 @@
+[
+  {
+    "code": "CS323",
+    "title": "Programming Fundamentals",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS335",
+    "title": "Discrete Structures",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS400",
+    "title": "Database Systems",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS423",
+    "pre": "CS323",
+    "title": "Object Oriented Programming",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS443",
+    "pre": "CS323",
+    "title": "Data Structures and Algorithms",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS453",
+    "title": "Software Engineering",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS497",
+    "title": "Information Security",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS577",
+    "title": "Computer Networks",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS583",
+    "title": "Operating System",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS698",
+    "title": "Final Year Project-I",
+    "creditHours": 2,
+    "theory": 0,
+    "lab": 4,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS699",
+    "pre": "CS698",
+    "title": "Final Year Project-II",
+    "creditHours": 4,
+    "theory": 0,
+    "lab": 8,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MTH315",
+    "pre": "MTH310",
+    "title": "Multivariable Calculus",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS572",
+    "pre": "MTH310",
+    "title": "Numerical Analysis",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MTH310",
+    "title": "Calculus & Analytical Geometry",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MTH435",
+    "title": "Linear Algebra",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MTH415",
+    "pre": "MTH315",
+    "title": "Differential Equations",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "STT500",
+    "title": "Statistics & Probability",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MGT322",
+    "title": "Financial Accounting",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MGT351",
+    "title": "Introduction to Marketing",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MGT411",
+    "title": "Introduction to Management",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MGT515",
+    "title": "Introduction to Human Resource Management",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MGT512",
+    "title": "Introduction to Organizational Behaviour",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "MGT525",
+    "pre": "MGT322",
+    "title": "Introduction to Financial Management",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "SSH304",
+    "title": "Personal Grooming & Development",
+    "creditHours": 2,
+    "theory": 2,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "SSH305",
+    "title": "Social Service",
+    "creditHours": 1,
+    "theory": 1,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "CS300",
+    "title": "Introduction to Information & Communication Technologies",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "ENG305",
+    "title": "English Comprehension",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "ENG315",
+    "title": "Technical & Business Writing",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "ENG325",
+    "title": "Communication & Presentation Skills",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "IS302",
+    "title": "Islamic Studies",
+    "creditHours": 2,
+    "theory": 2,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "SSH302",
+    "title": "Pakistan Studies",
+    "creditHours": 2,
+    "theory": 2,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+  {
+    "code": "SSH303",
+    "title": "Professional Practices",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC", "BSCSAI"]
+  },
+
+  {
+    "code": "CS430",
+    "title": "Digital Logic Design",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS530",
+    "pre": "CS430",
+    "title": "Computer Organization & Assembly Language",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS536",
+    "pre": "CS335",
+    "title": "Theory of Automata & Formal Languages",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS542",
+    "pre": "CS443",
+    "title": "Analysis of Algorithms",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS632",
+    "title": "Artificial Intelligence",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS636",
+    "pre": "CS536",
+    "title": "Compiler Construction",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS687",
+    "title": "Parallel & Distributed Computing",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS432",
+    "pre": "CS423",
+    "title": "Modern Programming Languages",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS566",
+    "title": "Web Technologies",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS601",
+    "pre": "CS400",
+    "title": "Database Administration & Management",
+    "creditHours": 4,
+    "theory": 3,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS666",
+    "pre": "CS566",
+    "title": "Web Engineering ",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS692",
+    "pre": "CS423",
+    "title": "Visual Programming",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS693",
+    "pre": "CS432",
+    "title": "Mobile Application Development",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS532",
+    "title": "Computer Architecture ",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS575",
+    "pre": "CS323",
+    "title": "Computer Graphics",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS597",
+    "title": "Cyber Security ",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS682",
+    "title": "System Programming ",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS685",
+    "title": "Human Computer Interaction ",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+  {
+    "code": "CS695",
+    "pre": "CS423",
+    "title": "Theory of Programming Languages ",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 2,
+    "programs": ["BSCSGC"]
+  },
+
+  {
+    "code": "CS403",
+    "pre": "CS632",
+    "title": "Programming in AI",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 3,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS404",
+    "pre": "CS403",
+    "title": "Machine Learning",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 3,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS405",
+    "pre": "CS403",
+    "title": "Artificial Neural Networks",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 3,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS406",
+    "title": "Knowledge Representation & Reasoning",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS515",
+    "title": "Computing Vision",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 3,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS516",
+    "title": "Natural Language Processing",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "STT502",
+    "title": "Advance Statistics",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS407",
+    "title": "Data Mining",
+    "creditHours": 3,
+    "theory": 2,
+    "lab": 3,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS408",
+    "title": "Deep Learning",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS517",
+    "title": "Speech Processing",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS518",
+    "title": "Reinforcement Learning",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS519",
+    "title": "Fuzzy Systems",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS520",
+    "title": "Evolutionary Computing",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS521",
+    "title": "Swarm Intelligence",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS522",
+    "title": "Agent Based Modeling",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "CS523",
+    "title": "Knowledge Based Systems",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  },
+  {
+    "code": "SSH307",
+    "title": "Professional Practices",
+    "creditHours": 3,
+    "theory": 3,
+    "lab": 0,
+    "programs": ["BSCSAI"]
+  }
+]
