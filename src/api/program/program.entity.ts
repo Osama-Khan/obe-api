@@ -1,3 +1,4 @@
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { CourseEntity } from '@api/course/course.entity';
 import { ProgramPloMapEntity } from '@api/maps/program-plo/map.entity';
 import { SectionEntity } from '@api/section/section.entity';
@@ -26,4 +27,8 @@ export class ProgramEntity extends ParentEntity {
   /** The sections that offer this program */
   @OneToMany((type) => SectionEntity, (section) => section.program)
   sections: SectionEntity[];
+
+  /** The assessments of courses in this program */
+  @OneToMany((type) => AssessmentEntity, (a) => a.program)
+  assessments: AssessmentEntity[];
 }

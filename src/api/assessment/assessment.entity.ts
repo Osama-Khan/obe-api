@@ -1,6 +1,7 @@
 import { ActivityTypeEntity } from '@api/activity/type/activity-type.entity';
 import { CourseEntity } from '@api/course/course.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
+import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from '@shared/entity/ParentEntity';
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 
@@ -12,6 +13,13 @@ export class AssessmentEntity extends ParentEntity {
     name: 'course_id',
   })
   course: CourseEntity;
+
+  /** The Program this assessment is relevant to */
+  @ManyToOne((type) => ProgramEntity, (program) => program.assessments)
+  @JoinColumn({
+    name: 'program_id',
+  })
+  program: ProgramEntity;
 
   /** The activity type this assessment is for */
   @ManyToOne((type) => ActivityTypeEntity, (type) => type.assessments)
