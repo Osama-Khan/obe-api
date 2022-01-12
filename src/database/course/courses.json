@@ -5,7 +5,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "PF"
   },
   {
     "code": "CS335",
@@ -13,7 +14,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "DS"
   },
   {
     "code": "CS400",
@@ -21,7 +23,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "DS"
   },
   {
     "code": "CS423",
@@ -30,7 +33,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "OOP"
   },
   {
     "code": "CS443",
@@ -39,7 +43,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "DSA"
   },
   {
     "code": "CS453",
@@ -47,7 +52,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "SE"
   },
   {
     "code": "CS497",
@@ -55,7 +61,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IS"
   },
   {
     "code": "CS577",
@@ -63,7 +70,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "CN"
   },
   {
     "code": "CS583",
@@ -71,7 +79,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "OS"
   },
   {
     "code": "CS698",
@@ -79,7 +88,8 @@
     "creditHours": 2,
     "theory": 0,
     "lab": 4,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "FYPI"
   },
   {
     "code": "CS699",
@@ -88,7 +98,8 @@
     "creditHours": 4,
     "theory": 0,
     "lab": 8,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "FYPII"
   },
   {
     "code": "MTH315",
@@ -97,7 +108,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "MC"
   },
   {
     "code": "CS572",
@@ -106,7 +118,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "NA"
   },
   {
     "code": "MTH310",
@@ -114,7 +127,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "CAG"
   },
   {
     "code": "MTH435",
@@ -122,7 +136,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "LA"
   },
   {
     "code": "MTH415",
@@ -131,7 +146,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "DE"
   },
   {
     "code": "STT500",
@@ -139,7 +155,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "SP"
   },
   {
     "code": "MGT322",
@@ -147,7 +164,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "FA"
   },
   {
     "code": "MGT351",
@@ -155,7 +173,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IM"
   },
   {
     "code": "MGT411",
@@ -163,7 +182,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IM"
   },
   {
     "code": "MGT515",
@@ -171,7 +191,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IHRM"
   },
   {
     "code": "MGT512",
@@ -179,7 +200,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IOB"
   },
   {
     "code": "MGT525",
@@ -188,7 +210,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IFM"
   },
   {
     "code": "SSH304",
@@ -196,7 +219,8 @@
     "creditHours": 2,
     "theory": 2,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "PGD"
   },
   {
     "code": "SSH305",
@@ -204,7 +228,8 @@
     "creditHours": 1,
     "theory": 1,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "SS"
   },
   {
     "code": "CS300",
@@ -212,7 +237,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IICT"
   },
   {
     "code": "ENG305",
@@ -220,7 +246,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "EC"
   },
   {
     "code": "ENG315",
@@ -228,7 +255,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "TBW"
   },
   {
     "code": "ENG325",
@@ -236,7 +264,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "CPS"
   },
   {
     "code": "IS302",
@@ -244,7 +273,8 @@
     "creditHours": 2,
     "theory": 2,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "IS"
   },
   {
     "code": "SSH302",
@@ -252,7 +282,8 @@
     "creditHours": 2,
     "theory": 2,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "PS"
   },
   {
     "code": "SSH303",
@@ -260,16 +291,17 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC", "BSCSAI"]
+    "programs": ["BSCSGC", "BSCSAI"],
+    "titleShort": "PP"
   },
-
   {
     "code": "CS430",
     "title": "Digital Logic Design",
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "DLD"
   },
   {
     "code": "CS530",
@@ -278,7 +310,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "COAL"
   },
   {
     "code": "CS536",
@@ -287,7 +320,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "TAFL"
   },
   {
     "code": "CS542",
@@ -296,7 +330,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "AA"
   },
   {
     "code": "CS632",
@@ -304,7 +339,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "AI"
   },
   {
     "code": "CS636",
@@ -313,7 +349,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "CC"
   },
   {
     "code": "CS687",
@@ -321,7 +358,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "PDC"
   },
   {
     "code": "CS432",
@@ -330,7 +368,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "MPL"
   },
   {
     "code": "CS566",
@@ -338,7 +377,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "WT"
   },
   {
     "code": "CS601",
@@ -347,7 +387,8 @@
     "creditHours": 4,
     "theory": 3,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "DAM"
   },
   {
     "code": "CS666",
@@ -356,7 +397,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "WE"
   },
   {
     "code": "CS692",
@@ -365,7 +407,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "VP"
   },
   {
     "code": "CS693",
@@ -374,7 +417,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "MAD"
   },
   {
     "code": "CS532",
@@ -382,7 +426,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "CA"
   },
   {
     "code": "CS575",
@@ -391,7 +436,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "CG"
   },
   {
     "code": "CS597",
@@ -399,7 +445,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "CS"
   },
   {
     "code": "CS682",
@@ -407,7 +454,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "SP"
   },
   {
     "code": "CS685",
@@ -415,7 +463,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "HCI"
   },
   {
     "code": "CS695",
@@ -424,9 +473,9 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 2,
-    "programs": ["BSCSGC"]
+    "programs": ["BSCSGC"],
+    "titleShort": "TPL"
   },
-
   {
     "code": "CS403",
     "pre": "CS632",
@@ -434,7 +483,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 3,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "PAI"
   },
   {
     "code": "CS404",
@@ -443,7 +493,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 3,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "ML"
   },
   {
     "code": "CS405",
@@ -452,7 +503,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 3,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "ANN"
   },
   {
     "code": "CS406",
@@ -460,7 +512,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "KRR"
   },
   {
     "code": "CS515",
@@ -468,7 +521,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 3,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "CV"
   },
   {
     "code": "CS516",
@@ -476,7 +530,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "NLP"
   },
   {
     "code": "STT502",
@@ -484,7 +539,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "AS"
   },
   {
     "code": "CS407",
@@ -492,7 +548,8 @@
     "creditHours": 3,
     "theory": 2,
     "lab": 3,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "DM"
   },
   {
     "code": "CS408",
@@ -500,7 +557,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "DL"
   },
   {
     "code": "CS517",
@@ -508,7 +566,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "SP"
   },
   {
     "code": "CS518",
@@ -516,7 +575,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "RL"
   },
   {
     "code": "CS519",
@@ -524,7 +584,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "FS"
   },
   {
     "code": "CS520",
@@ -532,7 +593,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "EC"
   },
   {
     "code": "CS521",
@@ -540,7 +602,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "SI"
   },
   {
     "code": "CS522",
@@ -548,7 +611,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "ABM"
   },
   {
     "code": "CS523",
@@ -556,7 +620,8 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "KBS"
   },
   {
     "code": "SSH307",
@@ -564,6 +629,7 @@
     "creditHours": 3,
     "theory": 3,
     "lab": 0,
-    "programs": ["BSCSAI"]
+    "programs": ["BSCSAI"],
+    "titleShort": "PP"
   }
 ]
