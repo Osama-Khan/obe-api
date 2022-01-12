@@ -6,7 +6,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "PF"
+    "titleShort": "PF",
+    "isElective": false
   },
   {
     "code": "CS335",
@@ -15,7 +16,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "DS"
+    "titleShort": "DS",
+    "isElective": false
   },
   {
     "code": "CS400",
@@ -24,7 +26,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "DS"
+    "titleShort": "DS",
+    "isElective": false
   },
   {
     "code": "CS423",
@@ -34,7 +37,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "OOP"
+    "titleShort": "OOP",
+    "isElective": false
   },
   {
     "code": "CS443",
@@ -44,7 +48,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "DSA"
+    "titleShort": "DSA",
+    "isElective": false
   },
   {
     "code": "CS453",
@@ -53,7 +58,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "SE"
+    "titleShort": "SE",
+    "isElective": false
   },
   {
     "code": "CS497",
@@ -62,7 +68,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IS"
+    "titleShort": "IS",
+    "isElective": false
   },
   {
     "code": "CS577",
@@ -71,7 +78,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "CN"
+    "titleShort": "CN",
+    "isElective": false
   },
   {
     "code": "CS583",
@@ -80,7 +88,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "OS"
+    "titleShort": "OS",
+    "isElective": false
   },
   {
     "code": "CS698",
@@ -89,7 +98,8 @@
     "theory": 0,
     "lab": 4,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "FYPI"
+    "titleShort": "FYPI",
+    "isElective": false
   },
   {
     "code": "CS699",
@@ -99,7 +109,8 @@
     "theory": 0,
     "lab": 8,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "FYPII"
+    "titleShort": "FYPII",
+    "isElective": false
   },
   {
     "code": "MTH315",
@@ -109,7 +120,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "MC"
+    "titleShort": "MC",
+    "isElective": true
   },
   {
     "code": "CS572",
@@ -119,7 +131,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "NA"
+    "titleShort": "NA",
+    "isElective": false
   },
   {
     "code": "MTH310",
@@ -128,7 +141,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "CAG"
+    "titleShort": "CAG",
+    "isElective": true
   },
   {
     "code": "MTH435",
@@ -137,7 +151,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "LA"
+    "titleShort": "LA",
+    "isElective": true
   },
   {
     "code": "MTH415",
@@ -147,7 +162,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "DE"
+    "titleShort": "DE",
+    "isElective": true
   },
   {
     "code": "STT500",
@@ -156,7 +172,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "SP"
+    "titleShort": "SP",
+    "isElective": true
   },
   {
     "code": "MGT322",
@@ -165,7 +182,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "FA"
+    "titleShort": "FA",
+    "isElective": true
   },
   {
     "code": "MGT351",
@@ -174,7 +192,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IM"
+    "titleShort": "IM",
+    "isElective": true
   },
   {
     "code": "MGT411",
@@ -183,7 +202,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IM"
+    "titleShort": "IM",
+    "isElective": true
   },
   {
     "code": "MGT515",
@@ -192,7 +212,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IHRM"
+    "titleShort": "IHRM",
+    "isElective": true
   },
   {
     "code": "MGT512",
@@ -201,7 +222,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IOB"
+    "titleShort": "IOB",
+    "isElective": true
   },
   {
     "code": "MGT525",
@@ -211,7 +233,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IFM"
+    "titleShort": "IFM",
+    "isElective": true
   },
   {
     "code": "SSH304",
@@ -220,7 +243,8 @@
     "theory": 2,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "PGD"
+    "titleShort": "PGD",
+    "isElective": true
   },
   {
     "code": "SSH305",
@@ -229,7 +253,8 @@
     "theory": 1,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "SS"
+    "titleShort": "SS",
+    "isElective": true
   },
   {
     "code": "CS300",
@@ -238,7 +263,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IICT"
+    "titleShort": "IICT",
+    "isElective": false
   },
   {
     "code": "ENG305",
@@ -247,7 +273,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "EC"
+    "titleShort": "EC",
+    "isElective": true
   },
   {
     "code": "ENG315",
@@ -256,7 +283,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "TBW"
+    "titleShort": "TBW",
+    "isElective": true
   },
   {
     "code": "ENG325",
@@ -265,7 +293,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "CPS"
+    "titleShort": "CPS",
+    "isElective": true
   },
   {
     "code": "IS302",
@@ -274,7 +303,8 @@
     "theory": 2,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "IS"
+    "titleShort": "IS",
+    "isElective": true
   },
   {
     "code": "SSH302",
@@ -283,7 +313,8 @@
     "theory": 2,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "PS"
+    "titleShort": "PS",
+    "isElective": true
   },
   {
     "code": "SSH303",
@@ -292,7 +323,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC", "BSCSAI"],
-    "titleShort": "PP"
+    "titleShort": "PP",
+    "isElective": true
   },
   {
     "code": "CS430",
@@ -301,7 +333,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "DLD"
+    "titleShort": "DLD",
+    "isElective": false
   },
   {
     "code": "CS530",
@@ -311,7 +344,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "COAL"
+    "titleShort": "COAL",
+    "isElective": false
   },
   {
     "code": "CS536",
@@ -321,7 +355,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC"],
-    "titleShort": "TAFL"
+    "titleShort": "TAFL",
+    "isElective": false
   },
   {
     "code": "CS542",
@@ -331,7 +366,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC"],
-    "titleShort": "AA"
+    "titleShort": "AA",
+    "isElective": false
   },
   {
     "code": "CS632",
@@ -340,7 +376,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "AI"
+    "titleShort": "AI",
+    "isElective": false
   },
   {
     "code": "CS636",
@@ -350,7 +387,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "CC"
+    "titleShort": "CC",
+    "isElective": false
   },
   {
     "code": "CS687",
@@ -359,7 +397,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "PDC"
+    "titleShort": "PDC",
+    "isElective": false
   },
   {
     "code": "CS432",
@@ -369,7 +408,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "MPL"
+    "titleShort": "MPL",
+    "isElective": false
   },
   {
     "code": "CS566",
@@ -378,7 +418,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "WT"
+    "titleShort": "WT",
+    "isElective": false
   },
   {
     "code": "CS601",
@@ -388,7 +429,8 @@
     "theory": 3,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "DAM"
+    "titleShort": "DAM",
+    "isElective": false
   },
   {
     "code": "CS666",
@@ -398,7 +440,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "WE"
+    "titleShort": "WE",
+    "isElective": false
   },
   {
     "code": "CS692",
@@ -408,7 +451,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "VP"
+    "titleShort": "VP",
+    "isElective": false
   },
   {
     "code": "CS693",
@@ -418,7 +462,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "MAD"
+    "titleShort": "MAD",
+    "isElective": false
   },
   {
     "code": "CS532",
@@ -427,7 +472,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "CA"
+    "titleShort": "CA",
+    "isElective": false
   },
   {
     "code": "CS575",
@@ -437,7 +483,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "CG"
+    "titleShort": "CG",
+    "isElective": false
   },
   {
     "code": "CS597",
@@ -446,7 +493,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSGC"],
-    "titleShort": "CS"
+    "titleShort": "CS",
+    "isElective": false
   },
   {
     "code": "CS682",
@@ -455,7 +503,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "SP"
+    "titleShort": "SP",
+    "isElective": false
   },
   {
     "code": "CS685",
@@ -464,7 +513,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "HCI"
+    "titleShort": "HCI",
+    "isElective": false
   },
   {
     "code": "CS695",
@@ -474,7 +524,8 @@
     "theory": 2,
     "lab": 2,
     "programs": ["BSCSGC"],
-    "titleShort": "TPL"
+    "titleShort": "TPL",
+    "isElective": false
   },
   {
     "code": "CS403",
@@ -484,7 +535,8 @@
     "theory": 2,
     "lab": 3,
     "programs": ["BSCSAI"],
-    "titleShort": "PAI"
+    "titleShort": "PAI",
+    "isElective": false
   },
   {
     "code": "CS404",
@@ -494,7 +546,8 @@
     "theory": 2,
     "lab": 3,
     "programs": ["BSCSAI"],
-    "titleShort": "ML"
+    "titleShort": "ML",
+    "isElective": false
   },
   {
     "code": "CS405",
@@ -504,7 +557,8 @@
     "theory": 2,
     "lab": 3,
     "programs": ["BSCSAI"],
-    "titleShort": "ANN"
+    "titleShort": "ANN",
+    "isElective": false
   },
   {
     "code": "CS406",
@@ -513,7 +567,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "KRR"
+    "titleShort": "KRR",
+    "isElective": false
   },
   {
     "code": "CS515",
@@ -522,7 +577,8 @@
     "theory": 2,
     "lab": 3,
     "programs": ["BSCSAI"],
-    "titleShort": "CV"
+    "titleShort": "CV",
+    "isElective": false
   },
   {
     "code": "CS516",
@@ -531,7 +587,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "NLP"
+    "titleShort": "NLP",
+    "isElective": false
   },
   {
     "code": "STT502",
@@ -540,7 +597,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "AS"
+    "titleShort": "AS",
+    "isElective": true
   },
   {
     "code": "CS407",
@@ -549,7 +607,8 @@
     "theory": 2,
     "lab": 3,
     "programs": ["BSCSAI"],
-    "titleShort": "DM"
+    "titleShort": "DM",
+    "isElective": false
   },
   {
     "code": "CS408",
@@ -558,7 +617,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "DL"
+    "titleShort": "DL",
+    "isElective": false
   },
   {
     "code": "CS517",
@@ -567,7 +627,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "SP"
+    "titleShort": "SP",
+    "isElective": false
   },
   {
     "code": "CS518",
@@ -576,7 +637,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "RL"
+    "titleShort": "RL",
+    "isElective": false
   },
   {
     "code": "CS519",
@@ -585,7 +647,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "FS"
+    "titleShort": "FS",
+    "isElective": false
   },
   {
     "code": "CS520",
@@ -594,7 +657,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "EC"
+    "titleShort": "EC",
+    "isElective": false
   },
   {
     "code": "CS521",
@@ -603,7 +667,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "SI"
+    "titleShort": "SI",
+    "isElective": false
   },
   {
     "code": "CS522",
@@ -612,7 +677,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "ABM"
+    "titleShort": "ABM",
+    "isElective": false
   },
   {
     "code": "CS523",
@@ -621,7 +687,8 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "KBS"
+    "titleShort": "KBS",
+    "isElective": false
   },
   {
     "code": "SSH307",
@@ -630,6 +697,7 @@
     "theory": 3,
     "lab": 0,
     "programs": ["BSCSAI"],
-    "titleShort": "PP"
+    "titleShort": "PP",
+    "isElective": true
   }
 ]
