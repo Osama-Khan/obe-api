@@ -2,9 +2,8 @@
   {
     "id": "CS323",
     "title": "Programming Fundamentals",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "PF",
     "isElective": false
@@ -12,9 +11,8 @@
   {
     "id": "CS335",
     "title": "Discrete Structures",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "DS",
     "isElective": false
@@ -22,9 +20,8 @@
   {
     "id": "CS400",
     "title": "Database Systems",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "DS",
     "isElective": false
@@ -33,9 +30,8 @@
     "id": "CS423",
     "pre": "CS323",
     "title": "Object Oriented Programming",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "OOP",
     "isElective": false
@@ -44,9 +40,8 @@
     "id": "CS443",
     "pre": "CS323",
     "title": "Data Structures and Algorithms",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "DSA",
     "isElective": false
@@ -54,9 +49,8 @@
   {
     "id": "CS453",
     "title": "Software Engineering",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "SE",
     "isElective": false
@@ -64,9 +58,8 @@
   {
     "id": "CS497",
     "title": "Information Security",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IS",
     "isElective": false
@@ -74,9 +67,8 @@
   {
     "id": "CS577",
     "title": "Computer Networks",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "CN",
     "isElective": false
@@ -84,9 +76,8 @@
   {
     "id": "CS583",
     "title": "Operating System",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "OS",
     "isElective": false
@@ -94,9 +85,8 @@
   {
     "id": "CS698",
     "title": "Final Year Project-I",
-    "creditHours": 2,
-    "theory": 0,
-    "lab": 4,
+    "theoryHours": 0,
+    "labHours": 4,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "FYPI",
     "isElective": false
@@ -105,9 +95,8 @@
     "id": "CS699",
     "pre": "CS698",
     "title": "Final Year Project-II",
-    "creditHours": 4,
-    "theory": 0,
-    "lab": 8,
+    "theoryHours": 0,
+    "labHours": 8,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "FYPII",
     "isElective": false
@@ -116,9 +105,8 @@
     "id": "MTH315",
     "pre": "MTH310",
     "title": "Multivariable Calculus",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "MC",
     "isElective": true
@@ -127,9 +115,8 @@
     "id": "CS572",
     "pre": "MTH310",
     "title": "Numerical Analysis",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "NA",
     "isElective": false
@@ -137,9 +124,8 @@
   {
     "id": "MTH310",
     "title": "Calculus & Analytical Geometry",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "CAG",
     "isElective": true
@@ -147,9 +133,8 @@
   {
     "id": "MTH435",
     "title": "Linear Algebra",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "LA",
     "isElective": true
@@ -158,9 +143,8 @@
     "id": "MTH415",
     "pre": "MTH315",
     "title": "Differential Equations",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "DE",
     "isElective": true
@@ -168,9 +152,8 @@
   {
     "id": "STT500",
     "title": "Statistics & Probability",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "SP",
     "isElective": true
@@ -178,9 +161,8 @@
   {
     "id": "MGT322",
     "title": "Financial Accounting",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "FA",
     "isElective": true
@@ -188,9 +170,8 @@
   {
     "id": "MGT351",
     "title": "Introduction to Marketing",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IM",
     "isElective": true
@@ -198,9 +179,8 @@
   {
     "id": "MGT411",
     "title": "Introduction to Management",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IM",
     "isElective": true
@@ -208,9 +188,8 @@
   {
     "id": "MGT515",
     "title": "Introduction to Human Resource Management",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IHRM",
     "isElective": true
@@ -218,9 +197,8 @@
   {
     "id": "MGT512",
     "title": "Introduction to Organizational Behaviour",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IOB",
     "isElective": true
@@ -229,9 +207,8 @@
     "id": "MGT525",
     "pre": "MGT322",
     "title": "Introduction to Financial Management",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IFM",
     "isElective": true
@@ -239,9 +216,8 @@
   {
     "id": "SSH304",
     "title": "Personal Grooming & Development",
-    "creditHours": 2,
-    "theory": 2,
-    "lab": 0,
+    "theoryHours": 2,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "PGD",
     "isElective": true
@@ -249,9 +225,8 @@
   {
     "id": "SSH305",
     "title": "Social Service",
-    "creditHours": 1,
-    "theory": 1,
-    "lab": 0,
+    "theoryHours": 1,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "SS",
     "isElective": true
@@ -259,9 +234,8 @@
   {
     "id": "CS300",
     "title": "Introduction to Information & Communication Technologies",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IICT",
     "isElective": false
@@ -269,9 +243,8 @@
   {
     "id": "ENG305",
     "title": "English Comprehension",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "EC",
     "isElective": true
@@ -279,9 +252,8 @@
   {
     "id": "ENG315",
     "title": "Technical & Business Writing",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "TBW",
     "isElective": true
@@ -289,9 +261,8 @@
   {
     "id": "ENG325",
     "title": "Communication & Presentation Skills",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "CPS",
     "isElective": true
@@ -299,9 +270,8 @@
   {
     "id": "IS302",
     "title": "Islamic Studies",
-    "creditHours": 2,
-    "theory": 2,
-    "lab": 0,
+    "theoryHours": 2,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "IS",
     "isElective": true
@@ -309,9 +279,8 @@
   {
     "id": "SSH302",
     "title": "Pakistan Studies",
-    "creditHours": 2,
-    "theory": 2,
-    "lab": 0,
+    "theoryHours": 2,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "PS",
     "isElective": true
@@ -319,9 +288,8 @@
   {
     "id": "SSH303",
     "title": "Professional Practices",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC", "BSCSAI"],
     "titleShort": "PP",
     "isElective": true
@@ -329,9 +297,8 @@
   {
     "id": "CS430",
     "title": "Digital Logic Design",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "DLD",
     "isElective": false
@@ -340,9 +307,8 @@
     "id": "CS530",
     "pre": "CS430",
     "title": "Computer Organization & Assembly Language",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "COAL",
     "isElective": false
@@ -351,9 +317,8 @@
     "id": "CS536",
     "pre": "CS335",
     "title": "Theory of Automata & Formal Languages",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC"],
     "titleShort": "TAFL",
     "isElective": false
@@ -362,9 +327,8 @@
     "id": "CS542",
     "pre": "CS443",
     "title": "Analysis of Algorithms",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC"],
     "titleShort": "AA",
     "isElective": false
@@ -372,9 +336,8 @@
   {
     "id": "CS632",
     "title": "Artificial Intelligence",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "AI",
     "isElective": false
@@ -383,9 +346,8 @@
     "id": "CS636",
     "pre": "CS536",
     "title": "Compiler Construction",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "CC",
     "isElective": false
@@ -393,9 +355,8 @@
   {
     "id": "CS687",
     "title": "Parallel & Distributed Computing",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "PDC",
     "isElective": false
@@ -404,9 +365,8 @@
     "id": "CS432",
     "pre": "CS423",
     "title": "Modern Programming Languages",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "MPL",
     "isElective": false
@@ -414,9 +374,8 @@
   {
     "id": "CS566",
     "title": "Web Technologies",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "WT",
     "isElective": false
@@ -425,9 +384,8 @@
     "id": "CS601",
     "pre": "CS400",
     "title": "Database Administration & Management",
-    "creditHours": 4,
-    "theory": 3,
-    "lab": 2,
+    "theoryHours": 3,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "DAM",
     "isElective": false
@@ -436,9 +394,8 @@
     "id": "CS666",
     "pre": "CS566",
     "title": "Web Engineering ",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "WE",
     "isElective": false
@@ -447,9 +404,8 @@
     "id": "CS692",
     "pre": "CS423",
     "title": "Visual Programming",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "VP",
     "isElective": false
@@ -458,9 +414,8 @@
     "id": "CS693",
     "pre": "CS432",
     "title": "Mobile Application Development",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "MAD",
     "isElective": false
@@ -468,9 +423,8 @@
   {
     "id": "CS532",
     "title": "Computer Architecture ",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "CA",
     "isElective": false
@@ -479,9 +433,8 @@
     "id": "CS575",
     "pre": "CS323",
     "title": "Computer Graphics",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "CG",
     "isElective": false
@@ -489,9 +442,8 @@
   {
     "id": "CS597",
     "title": "Cyber Security ",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSGC"],
     "titleShort": "CS",
     "isElective": false
@@ -499,9 +451,8 @@
   {
     "id": "CS682",
     "title": "System Programming ",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "SP",
     "isElective": false
@@ -509,9 +460,8 @@
   {
     "id": "CS685",
     "title": "Human Computer Interaction ",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "HCI",
     "isElective": false
@@ -520,9 +470,8 @@
     "id": "CS695",
     "pre": "CS423",
     "title": "Theory of Programming Languages ",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 2,
+    "theoryHours": 2,
+    "labHours": 2,
     "programs": ["BSCSGC"],
     "titleShort": "TPL",
     "isElective": false
@@ -531,9 +480,8 @@
     "id": "CS403",
     "pre": "CS632",
     "title": "Programming in AI",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 3,
+    "theoryHours": 2,
+    "labHours": 3,
     "programs": ["BSCSAI"],
     "titleShort": "PAI",
     "isElective": false
@@ -542,9 +490,8 @@
     "id": "CS404",
     "pre": "CS403",
     "title": "Machine Learning",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 3,
+    "theoryHours": 2,
+    "labHours": 3,
     "programs": ["BSCSAI"],
     "titleShort": "ML",
     "isElective": false
@@ -553,9 +500,8 @@
     "id": "CS405",
     "pre": "CS403",
     "title": "Artificial Neural Networks",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 3,
+    "theoryHours": 2,
+    "labHours": 3,
     "programs": ["BSCSAI"],
     "titleShort": "ANN",
     "isElective": false
@@ -563,9 +509,8 @@
   {
     "id": "CS406",
     "title": "Knowledge Representation & Reasoning",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "KRR",
     "isElective": false
@@ -573,9 +518,8 @@
   {
     "id": "CS515",
     "title": "Computing Vision",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 3,
+    "theoryHours": 2,
+    "labHours": 3,
     "programs": ["BSCSAI"],
     "titleShort": "CV",
     "isElective": false
@@ -583,9 +527,8 @@
   {
     "id": "CS516",
     "title": "Natural Language Processing",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "NLP",
     "isElective": false
@@ -593,9 +536,8 @@
   {
     "id": "STT502",
     "title": "Advance Statistics",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "AS",
     "isElective": true
@@ -603,9 +545,8 @@
   {
     "id": "CS407",
     "title": "Data Mining",
-    "creditHours": 3,
-    "theory": 2,
-    "lab": 3,
+    "theoryHours": 2,
+    "labHours": 3,
     "programs": ["BSCSAI"],
     "titleShort": "DM",
     "isElective": false
@@ -613,9 +554,8 @@
   {
     "id": "CS408",
     "title": "Deep Learning",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "DL",
     "isElective": false
@@ -623,9 +563,8 @@
   {
     "id": "CS517",
     "title": "Speech Processing",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "SP",
     "isElective": false
@@ -633,9 +572,8 @@
   {
     "id": "CS518",
     "title": "Reinforcement Learning",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "RL",
     "isElective": false
@@ -643,9 +581,8 @@
   {
     "id": "CS519",
     "title": "Fuzzy Systems",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "FS",
     "isElective": false
@@ -653,9 +590,8 @@
   {
     "id": "CS520",
     "title": "Evolutionary Computing",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "EC",
     "isElective": false
@@ -663,9 +599,8 @@
   {
     "id": "CS521",
     "title": "Swarm Intelligence",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "SI",
     "isElective": false
@@ -673,9 +608,8 @@
   {
     "id": "CS522",
     "title": "Agent Based Modeling",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "ABM",
     "isElective": false
@@ -683,9 +617,8 @@
   {
     "id": "CS523",
     "title": "Knowledge Based Systems",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "KBS",
     "isElective": false
@@ -693,9 +626,8 @@
   {
     "id": "SSH307",
     "title": "Professional Practices",
-    "creditHours": 3,
-    "theory": 3,
-    "lab": 0,
+    "theoryHours": 3,
+    "labHours": 0,
     "programs": ["BSCSAI"],
     "titleShort": "PP",
     "isElective": true
