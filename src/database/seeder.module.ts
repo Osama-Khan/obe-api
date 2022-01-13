@@ -17,7 +17,9 @@ import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { db } from 'src/dbconfig';
 import { ActivityTypeSeederModule } from './activity-type/activity-type-seeder.module';
+import { CourseSeederModule } from './course/course-seeder.module';
 import { PLOSeederModule } from './plo/plo-seeder.module';
+import { ProgramSeederModule } from './program/program-seeder.module';
 import { RoleSeederModule } from './role/role-seeder.module';
 import { UserSeederModule } from './user/user-seeder.module';
 
@@ -52,9 +54,11 @@ const seedEntities = [
       synchronize: true,
     }),
     ActivityTypeSeederModule,
+    CourseSeederModule,
     RoleSeederModule,
     UserSeederModule,
     PLOSeederModule,
+    ProgramSeederModule,
   ],
 })
 export class SeederModule {}
