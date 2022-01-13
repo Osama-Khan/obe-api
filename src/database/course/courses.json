@@ -1,6 +1,6 @@
 [
   {
-    "code": "CS323",
+    "id": "CS323",
     "title": "Programming Fundamentals",
     "creditHours": 4,
     "theory": 3,
@@ -10,7 +10,7 @@
     "isElective": false
   },
   {
-    "code": "CS335",
+    "id": "CS335",
     "title": "Discrete Structures",
     "creditHours": 3,
     "theory": 3,
@@ -20,7 +20,7 @@
     "isElective": false
   },
   {
-    "code": "CS400",
+    "id": "CS400",
     "title": "Database Systems",
     "creditHours": 4,
     "theory": 3,
@@ -30,7 +30,7 @@
     "isElective": false
   },
   {
-    "code": "CS423",
+    "id": "CS423",
     "pre": "CS323",
     "title": "Object Oriented Programming",
     "creditHours": 4,
@@ -41,7 +41,7 @@
     "isElective": false
   },
   {
-    "code": "CS443",
+    "id": "CS443",
     "pre": "CS323",
     "title": "Data Structures and Algorithms",
     "creditHours": 4,
@@ -52,7 +52,7 @@
     "isElective": false
   },
   {
-    "code": "CS453",
+    "id": "CS453",
     "title": "Software Engineering",
     "creditHours": 3,
     "theory": 3,
@@ -62,7 +62,7 @@
     "isElective": false
   },
   {
-    "code": "CS497",
+    "id": "CS497",
     "title": "Information Security",
     "creditHours": 3,
     "theory": 3,
@@ -72,7 +72,7 @@
     "isElective": false
   },
   {
-    "code": "CS577",
+    "id": "CS577",
     "title": "Computer Networks",
     "creditHours": 4,
     "theory": 3,
@@ -82,7 +82,7 @@
     "isElective": false
   },
   {
-    "code": "CS583",
+    "id": "CS583",
     "title": "Operating System",
     "creditHours": 4,
     "theory": 3,
@@ -92,7 +92,7 @@
     "isElective": false
   },
   {
-    "code": "CS698",
+    "id": "CS698",
     "title": "Final Year Project-I",
     "creditHours": 2,
     "theory": 0,
@@ -102,7 +102,7 @@
     "isElective": false
   },
   {
-    "code": "CS699",
+    "id": "CS699",
     "pre": "CS698",
     "title": "Final Year Project-II",
     "creditHours": 4,
@@ -113,7 +113,7 @@
     "isElective": false
   },
   {
-    "code": "MTH315",
+    "id": "MTH315",
     "pre": "MTH310",
     "title": "Multivariable Calculus",
     "creditHours": 3,
@@ -124,7 +124,7 @@
     "isElective": true
   },
   {
-    "code": "CS572",
+    "id": "CS572",
     "pre": "MTH310",
     "title": "Numerical Analysis",
     "creditHours": 3,
@@ -135,7 +135,7 @@
     "isElective": false
   },
   {
-    "code": "MTH310",
+    "id": "MTH310",
     "title": "Calculus & Analytical Geometry",
     "creditHours": 3,
     "theory": 3,
@@ -145,7 +145,7 @@
     "isElective": true
   },
   {
-    "code": "MTH435",
+    "id": "MTH435",
     "title": "Linear Algebra",
     "creditHours": 3,
     "theory": 3,
@@ -155,7 +155,7 @@
     "isElective": true
   },
   {
-    "code": "MTH415",
+    "id": "MTH415",
     "pre": "MTH315",
     "title": "Differential Equations",
     "creditHours": 3,
@@ -166,7 +166,7 @@
     "isElective": true
   },
   {
-    "code": "STT500",
+    "id": "STT500",
     "title": "Statistics & Probability",
     "creditHours": 3,
     "theory": 3,
@@ -176,7 +176,7 @@
     "isElective": true
   },
   {
-    "code": "MGT322",
+    "id": "MGT322",
     "title": "Financial Accounting",
     "creditHours": 3,
     "theory": 3,
@@ -186,7 +186,7 @@
     "isElective": true
   },
   {
-    "code": "MGT351",
+    "id": "MGT351",
     "title": "Introduction to Marketing",
     "creditHours": 3,
     "theory": 3,
@@ -196,7 +196,7 @@
     "isElective": true
   },
   {
-    "code": "MGT411",
+    "id": "MGT411",
     "title": "Introduction to Management",
     "creditHours": 3,
     "theory": 3,
@@ -206,7 +206,7 @@
     "isElective": true
   },
   {
-    "code": "MGT515",
+    "id": "MGT515",
     "title": "Introduction to Human Resource Management",
     "creditHours": 3,
     "theory": 3,
@@ -216,7 +216,7 @@
     "isElective": true
   },
   {
-    "code": "MGT512",
+    "id": "MGT512",
     "title": "Introduction to Organizational Behaviour",
     "creditHours": 3,
     "theory": 3,
@@ -226,7 +226,7 @@
     "isElective": true
   },
   {
-    "code": "MGT525",
+    "id": "MGT525",
     "pre": "MGT322",
     "title": "Introduction to Financial Management",
     "creditHours": 3,
@@ -237,7 +237,7 @@
     "isElective": true
   },
   {
-    "code": "SSH304",
+    "id": "SSH304",
     "title": "Personal Grooming & Development",
     "creditHours": 2,
     "theory": 2,
@@ -247,7 +247,7 @@
     "isElective": true
   },
   {
-    "code": "SSH305",
+    "id": "SSH305",
     "title": "Social Service",
     "creditHours": 1,
     "theory": 1,
@@ -257,7 +257,7 @@
     "isElective": true
   },
   {
-    "code": "CS300",
+    "id": "CS300",
     "title": "Introduction to Information & Communication Technologies",
     "creditHours": 3,
     "theory": 2,
@@ -267,7 +267,7 @@
     "isElective": false
   },
   {
-    "code": "ENG305",
+    "id": "ENG305",
     "title": "English Comprehension",
     "creditHours": 3,
     "theory": 3,
@@ -277,7 +277,7 @@
     "isElective": true
   },
   {
-    "code": "ENG315",
+    "id": "ENG315",
     "title": "Technical & Business Writing",
     "creditHours": 3,
     "theory": 3,
@@ -287,7 +287,7 @@
     "isElective": true
   },
   {
-    "code": "ENG325",
+    "id": "ENG325",
     "title": "Communication & Presentation Skills",
     "creditHours": 3,
     "theory": 3,
@@ -297,7 +297,7 @@
     "isElective": true
   },
   {
-    "code": "IS302",
+    "id": "IS302",
     "title": "Islamic Studies",
     "creditHours": 2,
     "theory": 2,
@@ -307,7 +307,7 @@
     "isElective": true
   },
   {
-    "code": "SSH302",
+    "id": "SSH302",
     "title": "Pakistan Studies",
     "creditHours": 2,
     "theory": 2,
@@ -317,7 +317,7 @@
     "isElective": true
   },
   {
-    "code": "SSH303",
+    "id": "SSH303",
     "title": "Professional Practices",
     "creditHours": 3,
     "theory": 3,
@@ -327,7 +327,7 @@
     "isElective": true
   },
   {
-    "code": "CS430",
+    "id": "CS430",
     "title": "Digital Logic Design",
     "creditHours": 4,
     "theory": 3,
@@ -337,7 +337,7 @@
     "isElective": false
   },
   {
-    "code": "CS530",
+    "id": "CS530",
     "pre": "CS430",
     "title": "Computer Organization & Assembly Language",
     "creditHours": 4,
@@ -348,7 +348,7 @@
     "isElective": false
   },
   {
-    "code": "CS536",
+    "id": "CS536",
     "pre": "CS335",
     "title": "Theory of Automata & Formal Languages",
     "creditHours": 3,
@@ -359,7 +359,7 @@
     "isElective": false
   },
   {
-    "code": "CS542",
+    "id": "CS542",
     "pre": "CS443",
     "title": "Analysis of Algorithms",
     "creditHours": 3,
@@ -370,7 +370,7 @@
     "isElective": false
   },
   {
-    "code": "CS632",
+    "id": "CS632",
     "title": "Artificial Intelligence",
     "creditHours": 4,
     "theory": 3,
@@ -380,7 +380,7 @@
     "isElective": false
   },
   {
-    "code": "CS636",
+    "id": "CS636",
     "pre": "CS536",
     "title": "Compiler Construction",
     "creditHours": 3,
@@ -391,7 +391,7 @@
     "isElective": false
   },
   {
-    "code": "CS687",
+    "id": "CS687",
     "title": "Parallel & Distributed Computing",
     "creditHours": 3,
     "theory": 2,
@@ -401,7 +401,7 @@
     "isElective": false
   },
   {
-    "code": "CS432",
+    "id": "CS432",
     "pre": "CS423",
     "title": "Modern Programming Languages",
     "creditHours": 3,
@@ -412,7 +412,7 @@
     "isElective": false
   },
   {
-    "code": "CS566",
+    "id": "CS566",
     "title": "Web Technologies",
     "creditHours": 3,
     "theory": 2,
@@ -422,7 +422,7 @@
     "isElective": false
   },
   {
-    "code": "CS601",
+    "id": "CS601",
     "pre": "CS400",
     "title": "Database Administration & Management",
     "creditHours": 4,
@@ -433,7 +433,7 @@
     "isElective": false
   },
   {
-    "code": "CS666",
+    "id": "CS666",
     "pre": "CS566",
     "title": "Web Engineering ",
     "creditHours": 3,
@@ -444,7 +444,7 @@
     "isElective": false
   },
   {
-    "code": "CS692",
+    "id": "CS692",
     "pre": "CS423",
     "title": "Visual Programming",
     "creditHours": 3,
@@ -455,7 +455,7 @@
     "isElective": false
   },
   {
-    "code": "CS693",
+    "id": "CS693",
     "pre": "CS432",
     "title": "Mobile Application Development",
     "creditHours": 3,
@@ -466,7 +466,7 @@
     "isElective": false
   },
   {
-    "code": "CS532",
+    "id": "CS532",
     "title": "Computer Architecture ",
     "creditHours": 3,
     "theory": 2,
@@ -476,7 +476,7 @@
     "isElective": false
   },
   {
-    "code": "CS575",
+    "id": "CS575",
     "pre": "CS323",
     "title": "Computer Graphics",
     "creditHours": 3,
@@ -487,7 +487,7 @@
     "isElective": false
   },
   {
-    "code": "CS597",
+    "id": "CS597",
     "title": "Cyber Security ",
     "creditHours": 3,
     "theory": 3,
@@ -497,7 +497,7 @@
     "isElective": false
   },
   {
-    "code": "CS682",
+    "id": "CS682",
     "title": "System Programming ",
     "creditHours": 3,
     "theory": 2,
@@ -507,7 +507,7 @@
     "isElective": false
   },
   {
-    "code": "CS685",
+    "id": "CS685",
     "title": "Human Computer Interaction ",
     "creditHours": 3,
     "theory": 2,
@@ -517,7 +517,7 @@
     "isElective": false
   },
   {
-    "code": "CS695",
+    "id": "CS695",
     "pre": "CS423",
     "title": "Theory of Programming Languages ",
     "creditHours": 3,
@@ -528,7 +528,7 @@
     "isElective": false
   },
   {
-    "code": "CS403",
+    "id": "CS403",
     "pre": "CS632",
     "title": "Programming in AI",
     "creditHours": 3,
@@ -539,7 +539,7 @@
     "isElective": false
   },
   {
-    "code": "CS404",
+    "id": "CS404",
     "pre": "CS403",
     "title": "Machine Learning",
     "creditHours": 3,
@@ -550,7 +550,7 @@
     "isElective": false
   },
   {
-    "code": "CS405",
+    "id": "CS405",
     "pre": "CS403",
     "title": "Artificial Neural Networks",
     "creditHours": 3,
@@ -561,7 +561,7 @@
     "isElective": false
   },
   {
-    "code": "CS406",
+    "id": "CS406",
     "title": "Knowledge Representation & Reasoning",
     "creditHours": 3,
     "theory": 3,
@@ -571,7 +571,7 @@
     "isElective": false
   },
   {
-    "code": "CS515",
+    "id": "CS515",
     "title": "Computing Vision",
     "creditHours": 3,
     "theory": 2,
@@ -581,7 +581,7 @@
     "isElective": false
   },
   {
-    "code": "CS516",
+    "id": "CS516",
     "title": "Natural Language Processing",
     "creditHours": 3,
     "theory": 3,
@@ -591,7 +591,7 @@
     "isElective": false
   },
   {
-    "code": "STT502",
+    "id": "STT502",
     "title": "Advance Statistics",
     "creditHours": 3,
     "theory": 3,
@@ -601,7 +601,7 @@
     "isElective": true
   },
   {
-    "code": "CS407",
+    "id": "CS407",
     "title": "Data Mining",
     "creditHours": 3,
     "theory": 2,
@@ -611,7 +611,7 @@
     "isElective": false
   },
   {
-    "code": "CS408",
+    "id": "CS408",
     "title": "Deep Learning",
     "creditHours": 3,
     "theory": 3,
@@ -621,7 +621,7 @@
     "isElective": false
   },
   {
-    "code": "CS517",
+    "id": "CS517",
     "title": "Speech Processing",
     "creditHours": 3,
     "theory": 3,
@@ -631,7 +631,7 @@
     "isElective": false
   },
   {
-    "code": "CS518",
+    "id": "CS518",
     "title": "Reinforcement Learning",
     "creditHours": 3,
     "theory": 3,
@@ -641,7 +641,7 @@
     "isElective": false
   },
   {
-    "code": "CS519",
+    "id": "CS519",
     "title": "Fuzzy Systems",
     "creditHours": 3,
     "theory": 3,
@@ -651,7 +651,7 @@
     "isElective": false
   },
   {
-    "code": "CS520",
+    "id": "CS520",
     "title": "Evolutionary Computing",
     "creditHours": 3,
     "theory": 3,
@@ -661,7 +661,7 @@
     "isElective": false
   },
   {
-    "code": "CS521",
+    "id": "CS521",
     "title": "Swarm Intelligence",
     "creditHours": 3,
     "theory": 3,
@@ -671,7 +671,7 @@
     "isElective": false
   },
   {
-    "code": "CS522",
+    "id": "CS522",
     "title": "Agent Based Modeling",
     "creditHours": 3,
     "theory": 3,
@@ -681,7 +681,7 @@
     "isElective": false
   },
   {
-    "code": "CS523",
+    "id": "CS523",
     "title": "Knowledge Based Systems",
     "creditHours": 3,
     "theory": 3,
@@ -691,7 +691,7 @@
     "isElective": false
   },
   {
-    "code": "SSH307",
+    "id": "SSH307",
     "title": "Professional Practices",
     "creditHours": 3,
     "theory": 3,

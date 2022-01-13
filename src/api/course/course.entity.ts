@@ -11,10 +11,6 @@ export class CourseEntity extends ParentEntity {
   @Column()
   title: string;
 
-  /** Unique code for the course */
-  @Column({ unique: true })
-  code: string;
-
   /** Credit hours of the course */
   @Column({ name: 'credit_hours', type: 'tinyint' })
   creditHours: number;
