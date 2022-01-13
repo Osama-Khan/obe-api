@@ -1,6 +1,7 @@
 import { ActivityEntity } from '@api/activity/activity.entity';
 import { EvaluationEntity } from '@api/activity/evaluation/evaluation.entity';
 import { ActivityMapEntity } from '@api/activity/map/map.entity';
+import { QuestionEntity } from '@api/activity/question/question.entity';
 import { ActivityTypeEntity } from '@api/activity/type/activity-type.entity';
 import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { AssessmentEntity } from '@api/assessment/assessment.entity';
@@ -36,6 +37,7 @@ const seedEntities = [
   PLOEntity,
   ProgramEntity,
   ProgramPloMapEntity,
+  QuestionEntity,
   RoleEntity,
   SectionEntity,
   UserEntity,
