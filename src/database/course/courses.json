@@ -4,7 +4,7 @@
     "title": "Programming Fundamentals",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "PF",
     "isElective": false
   },
@@ -13,7 +13,7 @@
     "title": "Discrete Structures",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "DS",
     "isElective": false
   },
@@ -22,7 +22,7 @@
     "title": "Database Systems",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "DS",
     "isElective": false
   },
@@ -32,7 +32,7 @@
     "title": "Object Oriented Programming",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "OOP",
     "isElective": false
   },
@@ -42,7 +42,7 @@
     "title": "Data Structures and Algorithms",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "DSA",
     "isElective": false
   },
@@ -51,7 +51,7 @@
     "title": "Software Engineering",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "SE",
     "isElective": false
   },
@@ -60,7 +60,7 @@
     "title": "Information Security",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IS",
     "isElective": false
   },
@@ -69,7 +69,7 @@
     "title": "Computer Networks",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "CN",
     "isElective": false
   },
@@ -78,7 +78,7 @@
     "title": "Operating System",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "OS",
     "isElective": false
   },
@@ -87,7 +87,7 @@
     "title": "Final Year Project-I",
     "theoryHours": 0,
     "labHours": 4,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "FYPI",
     "isElective": false
   },
@@ -97,7 +97,7 @@
     "title": "Final Year Project-II",
     "theoryHours": 0,
     "labHours": 8,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "FYPII",
     "isElective": false
   },
@@ -107,7 +107,7 @@
     "title": "Multivariable Calculus",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "MC",
     "isElective": true
   },
@@ -117,7 +117,7 @@
     "title": "Numerical Analysis",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "NA",
     "isElective": false
   },
@@ -126,7 +126,7 @@
     "title": "Calculus & Analytical Geometry",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "CAG",
     "isElective": true
   },
@@ -135,7 +135,7 @@
     "title": "Linear Algebra",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "LA",
     "isElective": true
   },
@@ -145,7 +145,7 @@
     "title": "Differential Equations",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "DE",
     "isElective": true
   },
@@ -154,7 +154,7 @@
     "title": "Statistics & Probability",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "SP",
     "isElective": true
   },
@@ -163,7 +163,7 @@
     "title": "Financial Accounting",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "FA",
     "isElective": true
   },
@@ -172,7 +172,7 @@
     "title": "Introduction to Marketing",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IM",
     "isElective": true
   },
@@ -181,7 +181,7 @@
     "title": "Introduction to Management",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IM",
     "isElective": true
   },
@@ -190,7 +190,7 @@
     "title": "Introduction to Human Resource Management",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IHRM",
     "isElective": true
   },
@@ -199,7 +199,7 @@
     "title": "Introduction to Organizational Behaviour",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IOB",
     "isElective": true
   },
@@ -209,7 +209,7 @@
     "title": "Introduction to Financial Management",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IFM",
     "isElective": true
   },
@@ -218,7 +218,7 @@
     "title": "Personal Grooming & Development",
     "theoryHours": 2,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "PGD",
     "isElective": true
   },
@@ -227,7 +227,7 @@
     "title": "Social Service",
     "theoryHours": 1,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "SS",
     "isElective": true
   },
@@ -236,7 +236,7 @@
     "title": "Introduction to Information & Communication Technologies",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IICT",
     "isElective": false
   },
@@ -245,7 +245,7 @@
     "title": "English Comprehension",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "EC",
     "isElective": true
   },
@@ -254,7 +254,7 @@
     "title": "Technical & Business Writing",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "TBW",
     "isElective": true
   },
@@ -263,7 +263,7 @@
     "title": "Communication & Presentation Skills",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "CPS",
     "isElective": true
   },
@@ -272,7 +272,7 @@
     "title": "Islamic Studies",
     "theoryHours": 2,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "IS",
     "isElective": true
   },
@@ -281,7 +281,7 @@
     "title": "Pakistan Studies",
     "theoryHours": 2,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "PS",
     "isElective": true
   },
@@ -290,7 +290,7 @@
     "title": "Professional Practices",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC", "BSCSAI"],
+    "programs": [{ "id": "BSCSGC" }, { "id": "BSCSAI" }],
     "titleShort": "PP",
     "isElective": true
   },
@@ -299,7 +299,7 @@
     "title": "Digital Logic Design",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "DLD",
     "isElective": false
   },
@@ -309,7 +309,7 @@
     "title": "Computer Organization & Assembly Language",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "COAL",
     "isElective": false
   },
@@ -319,7 +319,7 @@
     "title": "Theory of Automata & Formal Languages",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "TAFL",
     "isElective": false
   },
@@ -329,7 +329,7 @@
     "title": "Analysis of Algorithms",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "AA",
     "isElective": false
   },
@@ -338,7 +338,7 @@
     "title": "Artificial Intelligence",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "AI",
     "isElective": false
   },
@@ -348,7 +348,7 @@
     "title": "Compiler Construction",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "CC",
     "isElective": false
   },
@@ -357,7 +357,7 @@
     "title": "Parallel & Distributed Computing",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "PDC",
     "isElective": false
   },
@@ -367,7 +367,7 @@
     "title": "Modern Programming Languages",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "MPL",
     "isElective": false
   },
@@ -376,7 +376,7 @@
     "title": "Web Technologies",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "WT",
     "isElective": false
   },
@@ -386,7 +386,7 @@
     "title": "Database Administration & Management",
     "theoryHours": 3,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "DAM",
     "isElective": false
   },
@@ -396,7 +396,7 @@
     "title": "Web Engineering ",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "WE",
     "isElective": false
   },
@@ -406,7 +406,7 @@
     "title": "Visual Programming",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "VP",
     "isElective": false
   },
@@ -416,7 +416,7 @@
     "title": "Mobile Application Development",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "MAD",
     "isElective": false
   },
@@ -425,7 +425,7 @@
     "title": "Computer Architecture ",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "CA",
     "isElective": false
   },
@@ -435,7 +435,7 @@
     "title": "Computer Graphics",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "CG",
     "isElective": false
   },
@@ -444,7 +444,7 @@
     "title": "Cyber Security ",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "CS",
     "isElective": false
   },
@@ -453,7 +453,7 @@
     "title": "System Programming ",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "SP",
     "isElective": false
   },
@@ -462,7 +462,7 @@
     "title": "Human Computer Interaction ",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "HCI",
     "isElective": false
   },
@@ -472,7 +472,7 @@
     "title": "Theory of Programming Languages ",
     "theoryHours": 2,
     "labHours": 2,
-    "programs": ["BSCSGC"],
+    "programs": [{ "id": "BSCSGC" }],
     "titleShort": "TPL",
     "isElective": false
   },
@@ -482,7 +482,7 @@
     "title": "Programming in AI",
     "theoryHours": 2,
     "labHours": 3,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "PAI",
     "isElective": false
   },
@@ -492,7 +492,7 @@
     "title": "Machine Learning",
     "theoryHours": 2,
     "labHours": 3,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "ML",
     "isElective": false
   },
@@ -502,7 +502,7 @@
     "title": "Artificial Neural Networks",
     "theoryHours": 2,
     "labHours": 3,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "ANN",
     "isElective": false
   },
@@ -511,7 +511,7 @@
     "title": "Knowledge Representation & Reasoning",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "KRR",
     "isElective": false
   },
@@ -520,7 +520,7 @@
     "title": "Computing Vision",
     "theoryHours": 2,
     "labHours": 3,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "CV",
     "isElective": false
   },
@@ -529,7 +529,7 @@
     "title": "Natural Language Processing",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "NLP",
     "isElective": false
   },
@@ -538,7 +538,7 @@
     "title": "Advance Statistics",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "AS",
     "isElective": true
   },
@@ -547,7 +547,7 @@
     "title": "Data Mining",
     "theoryHours": 2,
     "labHours": 3,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "DM",
     "isElective": false
   },
@@ -556,7 +556,7 @@
     "title": "Deep Learning",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "DL",
     "isElective": false
   },
@@ -565,7 +565,7 @@
     "title": "Speech Processing",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "SP",
     "isElective": false
   },
@@ -574,7 +574,7 @@
     "title": "Reinforcement Learning",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "RL",
     "isElective": false
   },
@@ -583,7 +583,7 @@
     "title": "Fuzzy Systems",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "FS",
     "isElective": false
   },
@@ -592,7 +592,7 @@
     "title": "Evolutionary Computing",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "EC",
     "isElective": false
   },
@@ -601,7 +601,7 @@
     "title": "Swarm Intelligence",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "SI",
     "isElective": false
   },
@@ -610,7 +610,7 @@
     "title": "Agent Based Modeling",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "ABM",
     "isElective": false
   },
@@ -619,7 +619,7 @@
     "title": "Knowledge Based Systems",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "KBS",
     "isElective": false
   },
@@ -628,7 +628,7 @@
     "title": "Professional Practices",
     "theoryHours": 3,
     "labHours": 0,
-    "programs": ["BSCSAI"],
+    "programs": [{ "id": "BSCSAI" }],
     "titleShort": "PP",
     "isElective": true
   }
