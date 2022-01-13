@@ -11,9 +11,21 @@ export class CourseEntity extends ParentEntity {
   @Column()
   title: string;
 
-  /** Credit hours of the course */
-  @Column({ name: 'credit_hours', type: 'tinyint' })
-  creditHours: number;
+  /** Short title of the course */
+  @Column({ name: 'title_short' })
+  titleShort: string;
+
+  /** Theory credit hours of the course */
+  @Column({ name: 'theory_hours', type: 'tinyint' })
+  theoryHours: number;
+
+  /** Lab credit hours of the course (1/2 contribution to total credit hours) */
+  @Column({ name: 'lab_hours', type: 'tinyint' })
+  labHours: number;
+
+  /** Determines if the course is elective */
+  @Column({ name: 'is_elective', type: 'boolean' })
+  isElective: boolean;
 
   /** The programs this course is present in */
   @ManyToMany((type) => ProgramEntity, (program) => program.courses)
