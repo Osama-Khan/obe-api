@@ -38,4 +38,8 @@ export class AssessmentEntity extends ParentEntity {
     name: 'clo_id',
   })
   clo: CLOEntity;
+
+  @Column({ name: 'is_approved', default: false })
+  /** If the assessment is approved by relevant HOD */
+  isApproved: boolean;
 }
