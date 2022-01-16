@@ -1,6 +1,7 @@
 import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { AssessmentEntity } from '@api/assessment/assessment.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
+import { PLOEntity } from '@api/objective/plo/plo.entity';
 import { ProgramEntity } from '@api/program/program.entity';
 import { ParentEntity } from 'src/shared/entity/ParentEntity';
 import { Column, Entity, JoinTable, ManyToMany, OneToMany } from 'typeorm';
@@ -35,6 +36,15 @@ export class CourseEntity extends ParentEntity {
     inverseJoinColumn: { name: 'program_id' },
   })
   programs: ProgramEntity[];
+
+  /** The plos abstractly mapped to this course */
+  @ManyToMany((type) => PLOEntity, (plo) => plo.courses)
+  @JoinTable({
+    name: 'abstract_mapping',
+    joinColumn: { name: 'course_id' },
+    inverseJoinColumn: { name: 'plo_id' },
+  })
+  plos: PLOEntity[];
 
   /** The clos that this course fulfills */
   @OneToMany((type) => CLOEntity, (clo) => clo.course)
