@@ -1,5 +1,4 @@
 import { CourseEntity } from '@api/course/course.entity';
-import { ProgramEntity } from '@api/program/program.entity';
 import { SectionEntity } from '@api/section/section.entity';
 import { UserEntity } from '@api/user/user.entity';
 import { Module } from '@nestjs/common';
@@ -13,7 +12,6 @@ import { AllocationService } from './allocation.service';
     TypeOrmModule.forFeature([
       AllocationEntity,
       CourseEntity,
-      ProgramEntity,
       SectionEntity,
       UserEntity,
     ]),

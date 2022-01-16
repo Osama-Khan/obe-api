@@ -8,7 +8,6 @@ import { Workbook } from 'exceljs';
 import { ObjectID, Repository } from 'typeorm';
 import { CourseEntity } from '@api/course/course.entity';
 import { ExcelDataNotFoundException } from '../allocation/exceptions';
-import { ProgramEntity } from '@api/program/program.entity';
 
 @Injectable()
 export class AllocationService extends ApiService<AllocationEntity> {
@@ -17,8 +16,6 @@ export class AllocationService extends ApiService<AllocationEntity> {
     repository: Repository<AllocationEntity>,
     @InjectRepository(CourseEntity)
     private courseRepository: Repository<CourseEntity>,
-    @InjectRepository(ProgramEntity)
-    private programRepository: Repository<ProgramEntity>,
     @InjectRepository(SectionEntity)
     private sectionRepository: Repository<SectionEntity>,
     @InjectRepository(UserEntity)
@@ -35,18 +32,14 @@ export class AllocationService extends ApiService<AllocationEntity> {
     const { worksheets } = await new Workbook().xlsx.load(buffer);
     const data: Partial<AllocationEntity>[] = [];
     let subjectCode: string,
-      sectionString: string,
-      sectionObj: { program: any; semester: any; name: any },
-      teacherName: string,
+      sectionId: string,
       teacherId: string | number | Date | ObjectID;
     for (let n = 1; n <= worksheets[0].rowCount; n++) {
       try {
         const r = worksheets[0].getRow(n);
         subjectCode = r.getCell(1).value.toString();
-        sectionString = r.getCell(2).value.toString();
-        teacherName = r.getCell(3).value.toString();
+        sectionId = r.getCell(2).value.toString();
         teacherId = r.getCell(4).value.toString();
-        sectionObj = this.sectionStringToObject(sectionString);
       } catch (e) {
         throw new BadRequestException(
           'Error parsing the file. Make sure the format is correct!\nAt row # ' +
@@ -54,36 +47,25 @@ export class AllocationService extends ApiService<AllocationEntity> {
         );
       }
 
-      const { name, semester, program: programName } = sectionObj;
-
       // Subject validation
       const subject = await this.courseRepository.findOne({
-        where: { code: subjectCode },
+        where: { id: subjectCode },
       });
       if (!subject)
         throw new ExcelDataNotFoundException('Subject code', subjectCode, n);
 
-      const program = await this.programRepository.findOne({
-        where: { title: programName },
-      });
-
       // Section validation
-      const section = await this.sectionRepository.findOne({
-        where: { name, semester, program },
+      const section = await this.sectionRepository.findOne(sectionId, {
         relations: ['program'],
       });
       if (!section) {
-        throw new ExcelDataNotFoundException('Section', sectionString, n);
+        throw new ExcelDataNotFoundException('Section', sectionId, n);
       }
 
       // Teacher validation
       const teacher = await this.userRepository.findOne(teacherId);
       if (!teacher) {
-        throw new ExcelDataNotFoundException(
-          'Teacher',
-          `${teacherName} (id: ${teacherId})`,
-          n,
-        );
+        throw new ExcelDataNotFoundException('Teacher ID', teacherId, n);
       }
 
       const course = subject;
@@ -97,13 +79,5 @@ export class AllocationService extends ApiService<AllocationEntity> {
     }
 
     return HttpStatus.OK;
-  }
-
-  private sectionStringToObject(str: string) {
-    const parts = str.split('-');
-    const [program, section] = parts;
-    const semester = section.substring(0, section.length - 1);
-    const name = section[section.length - 1];
-    return { program, semester, name };
   }
 }
