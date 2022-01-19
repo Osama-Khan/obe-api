@@ -1,5 +1,5 @@
 import { CrudController } from '@shared/controllers/crud.controller';
-import { Controller, Inject } from '@nestjs/common';
+import { Controller, Get, Inject, Param } from '@nestjs/common';
 import { CourseEntity } from './course.entity';
 import { CourseService } from './course.service';
 
@@ -10,5 +10,11 @@ export class CourseController extends CrudController<
 > {
   constructor(@Inject(CourseService) service: CourseService) {
     super(service);
+  }
+
+  /** Gets list of courses with booleans representing if attention is required */
+  @Get('with-actions/:id')
+  getWithActions(@Param('id') programId: string) {
+    return this.service.getWithActions(programId);
   }
 }
