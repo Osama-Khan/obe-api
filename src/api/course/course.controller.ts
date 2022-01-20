@@ -1,5 +1,5 @@
 import { CrudController } from '@shared/controllers/crud.controller';
-import { Controller, Get, Inject, Param } from '@nestjs/common';
+import { Body, Controller, Get, Inject, Param, Put } from '@nestjs/common';
 import { CourseEntity } from './course.entity';
 import { CourseService } from './course.service';
 
@@ -16,5 +16,10 @@ export class CourseController extends CrudController<
   @Get('with-actions/:id')
   getWithActions(@Param('id') programId: string) {
     return this.service.getWithActions(programId);
+  }
+
+  @Put(':id/abstract-mapping')
+  addAbstractMapping(@Param('id') id: string, @Body() plos: string[]) {
+    return this.service.addAbstractMapping(id, plos);
   }
 }

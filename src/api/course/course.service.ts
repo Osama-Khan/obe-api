@@ -66,4 +66,13 @@ export class CourseService extends ApiService<CourseEntity> {
     }
     return courses;
   }
+
+  /** Sets Abstract Mapping for a course */
+  async addAbstractMapping(id: string, plos: string[]) {
+    const values = plos.map((p) => `('${id}', '${p}')`).join(',');
+    await this.repository.query(
+      `insert into abstract_mapping (course_id, plo_id) values ${values}`,
+    );
+    return this.repository.findOne(id, { relations: ['plos'] });
+  }
 }
