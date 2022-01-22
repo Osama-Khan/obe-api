@@ -40,8 +40,8 @@ export class CLOService extends ApiService<CLOEntity> {
           }));
 
         const clo = { ...c };
-        if (hasMaps) clo.maps = maps;
-        if (hasActMaps) clo.activityMaps = activityMaps;
+        if (hasMaps) clo.maps = maps || [];
+        if (hasActMaps) clo.activityMaps = activityMaps || [];
 
         clos.push(clo);
       }
