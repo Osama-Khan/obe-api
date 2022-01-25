@@ -154,4 +154,83 @@ export class UserService extends ApiService<UserEntity> {
     }
     return results;
   }
+
+  /**
+   * Returns course based PLO result of the student
+   * @param id ID of the student
+   * @returns Result represented by percentage of PLOs obtained in Courses
+   */
+  async getTranscript(id: string) {
+    const user = await this.findOne({ id }, { relations: ['sections'] });
+    if (!user) throw new NotFoundException('User not found!');
+
+    const section = await this.sectionRepo.findOne(user.sections[0].id, {
+      relations: ['program'],
+    });
+
+    const ploMaps = await this.progPloRepo.find({
+      where: { program: section.program.id },
+      relations: ['plo'],
+    });
+
+    let evals = await this.evalRepo.find({
+      where: { user: { id } },
+      relations: ['user', 'activity'],
+    });
+
+    const result = {
+      plos: ploMaps.map((p) => ({ ...p.plo, number: p.number })),
+      courses: [],
+      achieved: [],
+    };
+    for (const e of evals) {
+      const marks = e.marks / e.activity.marks;
+      e.activity = await this.actService.findOne(
+        { id: e.activity.id },
+        {
+          relations: ['allocation', 'maps', 'type'],
+        },
+      );
+
+      const { course } = await this.allocRepo.findOne(
+        e.activity.allocation.id,
+        { relations: ['course'] },
+      );
+
+      if (!result.courses.find((c) => c.id === course.id)) {
+        result.courses.push(course);
+      }
+
+      const typeAsm = await this.asmRepo.find({
+        where: { course, type: { id: e.activity.type.id } },
+        relations: ['type', 'clo'],
+      });
+
+      const clos = await this.cloService.find({
+        where: { id: In(e.activity.maps.map((m) => m.clo.id)) },
+        relations: ['maps'],
+      });
+
+      clos.map((c) => {
+        const weightFactor =
+          typeAsm.find((a) => a.clo.id === c.id).weight / 100;
+        c.maps.map((m) => {
+          const resInd = result.achieved.findIndex(
+            (r) => r.plo.id === m.plo.id && r.course.id === course.id,
+          );
+          const achieved = m.weight * marks * weightFactor;
+          if (resInd === -1) {
+            result.achieved.push({
+              plo: { id: m.plo.id },
+              course: { id: course.id },
+              achieved,
+            });
+            return;
+          }
+          result.achieved[resInd].achieved += achieved;
+        });
+      });
+    }
+    return result;
+  }
 }

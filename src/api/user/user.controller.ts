@@ -29,4 +29,14 @@ export class UserController extends CrudController<UserEntity, UserService> {
   getResultDetail(@Param('id') id: string, @Param('ploId') ploId: string) {
     return this.service.getResultDetail(id, ploId);
   }
+
+  /**
+   * Returns course based PLO result of the student
+   * @param id ID of the student
+   * @returns Result represented by percentage of PLOs obtained in Courses
+   */
+  @Get(':id/transcript')
+  getTranscript(@Param('id') id: string) {
+    return this.service.getTranscript(id);
+  }
 }
