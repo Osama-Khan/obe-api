@@ -113,13 +113,6 @@ export class UserService extends ApiService<UserEntity> {
     const user = await this.findOne({ id }, { relations: ['sections'] });
     if (!user) throw new NotFoundException('User not found!');
 
-    const section = await this.sectionRepo.findOne(user.sections[0].id, {
-      relations: ['program'],
-    });
-    const ploMap = await this.progPloRepo.findOne(ploId, {
-      relations: ['plo'],
-    });
-
     let evals = await this.evalRepo.find({
       where: { user: { id } },
       relations: ['user', 'activity'],
