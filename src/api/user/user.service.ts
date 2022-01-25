@@ -153,6 +153,7 @@ export class UserService extends ApiService<UserEntity> {
 
       results.push({
         activity: e.activity,
+        course,
         obtained: e.marks,
         assessments,
         clos,
