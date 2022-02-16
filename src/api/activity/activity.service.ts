@@ -1,3 +1,6 @@
+import { AllocationEntity } from '@api/allocation/allocation.entity';
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
+import { CourseEntity } from '@api/course/course.entity';
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { ApiService } from '@shared/services/api.service';
@@ -16,6 +19,13 @@ import { ActivityMapEntity } from './map/map.entity';
 export class ActivityService extends ApiService<ActivityEntity> {
   constructor(
     @InjectRepository(ActivityEntity) repository: Repository<ActivityEntity>,
+    @InjectRepository(CourseEntity)
+    private crsRepo: Repository<CourseEntity>,
+    @InjectRepository(AssessmentEntity)
+    private asmRepo: Repository<AssessmentEntity>,
+
+    @InjectRepository(AllocationEntity)
+    private alcRepo: Repository<AllocationEntity>,
     @InjectRepository(ActivityMapEntity)
     private amRepository: Repository<ActivityMapEntity>,
     @InjectRepository(EvaluationEntity)
@@ -53,6 +63,44 @@ export class ActivityService extends ApiService<ActivityEntity> {
     criteria?: FindManyOptions<ActivityEntity>,
   ): Promise<ActivityEntity[]> {
     const data = await this.repository.find(criteria);
+    // this.alcRepo.find({ relations: ['activities', 'course'] }).then((r) => {
+    //   r.forEach(async (a) => {
+    //     if (a.activities.length > 0) return;
+    //     const course = await this.crsRepo.findOne(a.course.id, {
+    //       relations: ['assessments'],
+    //     });
+    //     const asm1 = await this.asmRepo.findOne(course.assessments[1].id, {
+    //       relations: ['type'],
+    //     });
+    //     const asm2 = await this.asmRepo.findOne(course.assessments[2].id, {
+    //       relations: ['type'],
+    //     });
+    //     this.repository.insert({
+    //       allocation: a,
+    //       description: `${asm1.type.name} of ${course.titleShort}`,
+    //       title: asm1.type.name,
+    //       type: asm1.type,
+    //       marks: 30,
+    //     });
+    //     this.repository.insert({
+    //       allocation: a,
+    //       description: `${asm2.type.name} of ${course.titleShort}`,
+    //       title: asm2.type.name,
+    //       type: asm2.type,
+    //       marks: 30,
+    //     });
+    //   });
+    // });
+    // this.repository.find().then(async (acts) => {
+    //   acts.forEach((a) => {
+    //     this.evalRepository.insert({
+    //       activity: a,
+    //       marks: Math.round(Math.random() * 30),
+    //       user: { id: '2018-ARID-0139' },
+    //     });
+    //   });
+    // });
+    // return data;
     const activities = [];
     if (criteria?.relations?.includes('maps')) {
       for (const c of data) {

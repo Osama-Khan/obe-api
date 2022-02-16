@@ -4,6 +4,7 @@ import { EvaluationEntity } from '@api/activity/evaluation/evaluation.entity';
 import { ActivityMapEntity } from '@api/activity/map/map.entity';
 import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { AssessmentEntity } from '@api/assessment/assessment.entity';
+import { CourseEntity } from '@api/course/course.entity';
 import { ProgramPloMapEntity } from '@api/maps/program-plo/map.entity';
 import { CLOEntity } from '@api/objective/clo/clo.entity';
 import { CLOService } from '@api/objective/clo/clo.service';
@@ -26,6 +27,7 @@ import { UserService } from './user.service';
       EvaluationEntity,
       ObjectiveMapEntity,
       ProgramPloMapEntity,
+      CourseEntity,
       SectionEntity,
       UserEntity,
     ]),

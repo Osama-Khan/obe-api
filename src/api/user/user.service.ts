@@ -12,6 +12,20 @@ import { ApiService } from '@shared/services/api.service';
 import { In, Repository } from 'typeorm';
 import { UserEntity } from './user.entity';
 
+// const _teachers = [
+//   'Ali',
+//   'Hashim',
+//   'Fahad',
+//   'Hamza',
+//   'Nasir',
+//   'Munir',
+//   'Ahsan',
+//   'Shahid',
+//   'Noor',
+//   'Sumaira',
+//   'Ayesha',
+// ];
+
 @Injectable()
 export class UserService extends ApiService<UserEntity> {
   constructor(
@@ -31,6 +45,24 @@ export class UserService extends ApiService<UserEntity> {
   ) {
     super(repository);
   }
+
+  // async find(criteria?: any): Promise<any[]> {
+  //   _teachers.forEach((t, i) => {
+  //     const id = 'biit-' + (112 + i);
+  //     const bd = new Date();
+  //     const age = Math.random() * 20 + 20;
+  //     bd.setFullYear(bd.getFullYear() - age);
+  //     this.repository.insert({
+  //       id,
+  //       username: t,
+  //       email: t + '@biit.edu.pk',
+  //       password: 'teacher1',
+  //       role: { id: 'teacher' },
+  //       dateOfBirth: bd,
+  //     });
+  //   });
+  //   return super.find(criteria);
+  // }
 
   /**
    * Returns result of the student
@@ -181,9 +213,10 @@ export class UserService extends ApiService<UserEntity> {
     const result = {
       plos: ploMaps.map((p) => ({ ...p.plo, number: p.number })),
       courses: [],
+      activities: [],
       achieved: [],
     };
-    for (const e of evals) {
+    for (const e of evals as any) {
       const marks = e.marks / e.activity.marks;
       e.activity = await this.actService.findOne(
         { id: e.activity.id },
@@ -192,14 +225,26 @@ export class UserService extends ApiService<UserEntity> {
         },
       );
 
-      const { course } = await this.allocRepo.findOne(
+      const { course } = (await this.allocRepo.findOne(
         e.activity.allocation.id,
         { relations: ['course'] },
-      );
+      )) as any;
 
-      if (!result.courses.find((c) => c.id === course.id)) {
+      e.activity.course = course;
+
+      result.activities.push({ ...e.activity, achieved: e.marks });
+
+      let prevCourse = result.courses.findIndex((c) => c.id === course.id);
+
+      if (prevCourse === -1) {
+        course.total = 0;
+        course.achieved = 0;
         result.courses.push(course);
+        prevCourse = result.courses.length - 1;
       }
+
+      result.courses[prevCourse].total += e.activity.marks;
+      result.courses[prevCourse].achieved += e.marks;
 
       const typeAsm = await this.asmRepo.find({
         where: { course, type: { id: e.activity.type.id } },
@@ -208,7 +253,7 @@ export class UserService extends ApiService<UserEntity> {
 
       const clos = await this.cloService.find({
         where: { id: In(e.activity.maps.map((m) => m.clo.id)) },
-        relations: ['maps'],
+        relations: ['maps', 'course'],
       });
 
       clos.map((c) => {
@@ -218,11 +263,14 @@ export class UserService extends ApiService<UserEntity> {
           const resInd = result.achieved.findIndex(
             (r) => r.plo.id === m.plo.id && r.course.id === course.id,
           );
+          // marks/e.activity.marks if issue
           const achieved = m.weight * marks * weightFactor;
           if (resInd === -1) {
             result.achieved.push({
               plo: { id: m.plo.id },
-              course: { id: course.id },
+              course: {
+                id: course.id,
+              },
               achieved,
             });
             return;

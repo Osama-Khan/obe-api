@@ -1,3 +1,6 @@
+import { AllocationEntity } from '@api/allocation/allocation.entity';
+import { AssessmentEntity } from '@api/assessment/assessment.entity';
+import { CourseEntity } from '@api/course/course.entity';
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ActivityController } from './activity.controller';
@@ -17,6 +20,9 @@ import { ActivityTypeService } from './type/activity-type.service';
       ActivityEntity,
       ActivityTypeEntity,
       ActivityMapEntity,
+      CourseEntity,
+      AllocationEntity,
+      AssessmentEntity,
       EvaluationEntity,
     ]),
   ],

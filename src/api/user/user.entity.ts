@@ -14,6 +14,7 @@ import { RoleEntity } from '@api/role/role.entity';
 import { SectionEntity } from '@api/section/section.entity';
 import { AllocationEntity } from '@api/allocation/allocation.entity';
 import { EvaluationEntity } from '@api/activity/evaluation/evaluation.entity';
+import { RemarksEntity } from '@api/remarks/remarks.entity';
 
 @Entity({ name: 'user' })
 export class UserEntity extends ParentEntity {
@@ -54,6 +55,9 @@ export class UserEntity extends ParentEntity {
   /** Evaluations of the user */
   @OneToMany((type) => EvaluationEntity, (evaluation) => evaluation.user)
   evaluations: EvaluationEntity[];
+
+  @OneToMany((type) => RemarksEntity, (r) => r.student)
+  remarks: RemarksEntity[];
 
   /** Encryption method for password before insertion */
   @BeforeInsert()

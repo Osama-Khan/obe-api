@@ -13,6 +13,7 @@ import { AuthModule } from './auth/auth.module';
 import { ActivityModule } from './activity/activity.module';
 import { AssessmentModule } from './assessment/assessment.module';
 import { MapsModule } from './maps/maps.module';
+import { RemarksModule } from './remarks/remarks.module';
 
 @Module({
   imports: [
@@ -27,6 +28,7 @@ import { MapsModule } from './maps/maps.module';
     RoleModule,
     SectionModule,
     UserModule,
+    RemarksModule,
     AuthModule,
     ActivityModule,
     AssessmentModule,

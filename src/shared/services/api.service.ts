@@ -30,7 +30,7 @@ export abstract class ApiService<Entity> {
    * @returns A promise that resolves to the `Entity` with given id
    */
   async findOne(
-    conditions: FindConditions<Entity>,
+    conditions: FindConditions<Entity> | any,
     criteria?: FindOneOptions<Entity>,
   ): Promise<Entity> {
     return this.repository.findOne(conditions, criteria);
