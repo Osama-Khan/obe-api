@@ -43,7 +43,7 @@ const apiEntities = [
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: db.servername,
-      port: 3306,
+      port: db.port || 3306,
       username: db.username,
       password: db.password,
       database: db.dbname,
